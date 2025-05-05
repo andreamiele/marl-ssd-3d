@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/PreyBoth.unity
+    guid: 4c2e343ef043041c68d0baadefde8e91
+  - enabled: 0
+    path: Assets/Scenes/PositionalObs-19-05-2023 1.unity
+    guid: 59811e4f4221b45c2a21267a6ab343c9
+  - enabled: 1
+    path: Assets/Scenes/test.unity
+    guid: 81d21b3fb148843999c6e6f7483d4fcc
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

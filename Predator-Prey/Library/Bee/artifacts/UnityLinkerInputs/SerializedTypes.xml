@@ -1,0 +1,11 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="NatureEnvController/AgentInfo" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="Unity.ML-Agents">
+		<type fullname="Unity.MLAgents.Actuators.ActionSpec" preserve="nothing" serialized="true"/>
+		<type fullname="Unity.MLAgents.Agent/AgentParameters" preserve="nothing" serialized="true"/>
+		<type fullname="Unity.MLAgents.Policies.BehaviorType" preserve="nothing" serialized="true"/>
+		<type fullname="Unity.MLAgents.Policies.BrainParameters" preserve="nothing" serialized="true"/>
+	</assembly>
+</linker>
