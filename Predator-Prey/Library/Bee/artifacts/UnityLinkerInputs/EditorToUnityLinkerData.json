@@ -21,8 +21,15 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "EnvironmentController",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
@@ -30,7 +37,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -46,7 +53,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -62,15 +69,8 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "NatureEnvController",
-            "moduleName": "",
-            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
@@ -85,7 +85,7 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -147,6 +147,13 @@
         {
             "managedAssemblyName": "Unity.ML-Agents.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Unity.MLAgents.Agent",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.ML-Agents.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Unity.MLAgents.DecisionRequester",
             "moduleName": "",
             "usedInScenes": []
@@ -171,7 +178,7 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -201,7 +208,7 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -245,7 +252,7 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -254,7 +261,7 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -263,7 +270,7 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -272,7 +279,7 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -281,7 +288,7 @@
             "fullManagedTypeName": "UnityEngine.Avatar",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -290,7 +297,7 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -299,7 +306,7 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -308,7 +315,7 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -317,7 +324,7 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -326,7 +333,7 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -335,7 +342,7 @@
             "fullManagedTypeName": "UnityEngine.ComputeShader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -344,7 +351,7 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -353,7 +360,7 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -362,7 +369,7 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -371,7 +378,7 @@
             "fullManagedTypeName": "UnityEngine.LODGroup",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -380,7 +387,7 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -389,7 +396,7 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -398,7 +405,7 @@
             "fullManagedTypeName": "UnityEngine.MeshCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -407,7 +414,7 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -416,7 +423,7 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -425,7 +432,7 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -434,7 +441,7 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -443,7 +450,7 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -459,7 +466,7 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -475,7 +482,7 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -484,7 +491,7 @@
             "fullManagedTypeName": "UnityEngine.Rigidbody",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -493,7 +500,7 @@
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -502,7 +509,7 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -511,7 +518,7 @@
             "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -527,7 +534,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -536,7 +543,7 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -545,7 +552,7 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         },
         {
@@ -554,7 +561,7 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/test.unity"
+                "Assets/Scenes/train_new.unity"
             ]
         }
     ],

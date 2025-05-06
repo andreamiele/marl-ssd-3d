@@ -1,11 +1,12 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="NatureEnvController" preserve="nothing"/>
+		<type fullname="EnvironmentController" preserve="nothing"/>
 		<type fullname="PredatorAgent" preserve="nothing"/>
 		<type fullname="PreyAgent" preserve="nothing"/>
 		<type fullname="script" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.ML-Agents">
+		<type fullname="Unity.MLAgents.Agent" preserve="nothing"/>
 		<type fullname="Unity.MLAgents.DecisionRequester" preserve="nothing"/>
 		<type fullname="Unity.MLAgents.Policies.BehaviorParameters" preserve="nothing"/>
 		<type fullname="Unity.MLAgents.Sensors.RayPerceptionSensorComponent3D" preserve="nothing"/>

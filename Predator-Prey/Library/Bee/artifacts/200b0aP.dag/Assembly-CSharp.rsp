@@ -336,7 +336,11 @@
 "Assets/Scipts/NatureEnvController.cs"
 "Assets/Scipts/PredatorAgent.cs"
 "Assets/Scipts/PreyAgent.cs"
-"Assets/Scipts/script.cs"
+"Assets/Scripts/CameraView.cs"
+"Assets/Scripts/EnvironmentController.cs"
+"Assets/Scripts/PredatorAgent.cs"
+"Assets/Scripts/PreyAgent.cs"
+"Assets/Scripts/Radius.cs"
 -langversion:9.0
 /deterministic
 /optimize+

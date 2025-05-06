@@ -11,8 +11,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PositionalObs-19-05-2023 1.unity
     guid: 59811e4f4221b45c2a21267a6ab343c9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/train.unity
     guid: 81d21b3fb148843999c6e6f7483d4fcc
+  - enabled: 1
+    path: Assets/Scenes/train_new.unity
+    guid: a3848ac8e3afe4e24bc32c882eeee6c5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
