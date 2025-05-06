@@ -498,6 +498,15 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Shader",
+            "fullManagedTypeName": "UnityEngine.Shader",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/test.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "SkinnedMeshRenderer",
             "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
             "moduleName": "Core",
@@ -3226,7 +3235,6 @@
     "forceIncludeModules": [],
     "forceExcludeModules": [
         "AMD",
-        "AR",
         "NVIDIA"
     ]
 }

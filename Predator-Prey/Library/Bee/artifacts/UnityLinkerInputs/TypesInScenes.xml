@@ -50,6 +50,7 @@
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.Rigidbody" preserve="nothing"/>
 		<type fullname="UnityEngine.RuntimeAnimatorController" preserve="nothing"/>
+		<type fullname="UnityEngine.Shader" preserve="nothing"/>
 		<type fullname="UnityEngine.SkinnedMeshRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
 		<type fullname="UnityEngine.TextAsset" preserve="nothing"/>

@@ -70,19 +70,19 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 24060}
+      Script: {instanceID: 24078}
     - Class: 114
-      Script: {instanceID: 24860}
+      Script: {instanceID: 24884}
     - Class: 114
-      Script: {instanceID: 24934}
+      Script: {instanceID: 24958}
     - Class: 114
-      Script: {instanceID: 25184}
+      Script: {instanceID: 25210}
     - Class: 114
-      Script: {instanceID: 27806}
+      Script: {instanceID: 27750}
     - Class: 114
-      Script: {instanceID: 27898}
+      Script: {instanceID: 27842}
     - Class: 114
-      Script: {instanceID: 99260}
+      Script: {instanceID: 27934}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -576,6 +576,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: bf3677f5a1ca39df9dbfa2af0aaed18c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: script
+  - hash:
+      serializedVersion: 2
       Hash: 4bb1df4d86b6be92b1ac05bc78d6bff7
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -670,12 +676,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: bf3677f5a1ca39df9dbfa2af0aaed18c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: script
   platform: 2
   scenePathNames:
   - Assets/Scenes/test.unity
