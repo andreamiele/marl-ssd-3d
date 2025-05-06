@@ -561,7 +561,7 @@ ScriptsOnlyBuild:
     className: NavMeshModifierVolume
   - hash:
       serializedVersion: 2
-      Hash: d9be515f42dc8d70aba2cb6c3a90de69
+      Hash: c925c2acb153e32e534fee923224201b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: EnvironmentController
@@ -682,4 +682,4 @@ ScriptsOnlyBuild:
   platform: 2
   scenePathNames:
   - Assets/Scenes/train_new.unity
-  playerPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/builds/train_scene.app
+  playerPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/builds/train_new.app

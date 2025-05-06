@@ -235,6 +235,14 @@ PrefabInstance:
       propertyPath: 'm_DetectableTags.Array.data[2]'
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 3659011217991065647, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659011217991065647, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.75
+      objectReference: {fileID: 0}
     - target: {fileID: 3800823509319067921, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_Name
       value: Predator_1
@@ -577,6 +585,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5791052147342199129, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1847858320}
+    - targetCorrespondingSourceObject: {fileID: 5791052147342199129, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1847858323}
     - targetCorrespondingSourceObject: {fileID: 3800823509319067921, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1847858319}
@@ -651,13 +662,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f05e62f1e2c5247ccb0bbe57e8617904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnAreaObject: {fileID: 1570283000}
+  spawnArea: {fileID: 0}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 256
+  maxSpawnTries: 100
+  agentRadius: 0.5
   predatorTranslationSpeed: 5
   predatorRotationSpeed: 2
   preyTranslationSpeed: 4
   preyRotationSpeed: 1.5
   placeRandomly: 1
-  rnd_x_width: 2.5
-  rnd_z_width: 2.5
+  rnd_x_width: 5
+  rnd_z_width: 5
   rotMin: 0
   rotMax: 360
   inferenceEnable: 0
@@ -727,7 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a9974f15b494556a2c736f7296c90e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 5
+  radius: 6
 --- !u!1 &975547207 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4294308772522030310, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -764,6 +782,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 5
+--- !u!1 &1220028788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1168147995622084106, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+  m_PrefabInstance: {fileID: 211685005}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1475268030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3552009245790336636, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -781,6 +804,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f05e62f1e2c5247ccb0bbe57e8617904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnAreaObject: {fileID: 1220028788}
+  spawnArea: {fileID: 0}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 256
+  maxSpawnTries: 100
+  agentRadius: 0.5
   predatorTranslationSpeed: 5
   predatorRotationSpeed: 2
   preyTranslationSpeed: 4
@@ -809,6 +839,11 @@ MonoBehaviour:
   soloCatchReward: 1
   teamCatchReward: 1
   catchRadius: 6.5
+--- !u!1 &1570283000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3858351912792001456, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+  m_PrefabInstance: {fileID: 211685005}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1847858317 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3800823509319067921, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -865,7 +900,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a9974f15b494556a2c736f7296c90e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 5
+  radius: 6
+--- !u!114 &1847858323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847858318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a9974f15b494556a2c736f7296c90e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

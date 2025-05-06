@@ -16,6 +16,14 @@ public class EnvironmentController : MonoBehaviour {
         public Rigidbody rigidBody;
     }
 
+    public GameObject spawnAreaObject;
+    public Collider spawnArea;
+    public LayerMask obstacleMask; 
+
+    [Header("Spawn Settings")]
+    public int maxSpawnTries = 100;
+    public float agentRadius = 0.5f;
+
     public float predatorTranslationSpeed = 5f;
     public float predatorRotationSpeed    = 2f;
     public float preyTranslationSpeed     = 4f;
@@ -45,6 +53,8 @@ public class EnvironmentController : MonoBehaviour {
     public float catchRadius     = 15f;
 
     void Start() {
+        spawnArea = spawnAreaObject.GetComponent<Collider>();
+        
         foreach (var item in agentsList) {
             item.startingPosition = item.agent.transform.position;
             item.startingRotation = item.agent.transform.rotation;
@@ -156,24 +166,40 @@ public class EnvironmentController : MonoBehaviour {
         killedPreysCount += 1;
     }
 
+    private Vector3 SampleSafePosition()
+    {
+        var bounds = spawnArea.bounds;
+        for (int i = 0; i < maxSpawnTries; i++)
+        {
+            // Tirage aléatoire dans le XZ du spawnArea
+            float x = Random.Range(bounds.min.x, bounds.max.x);
+            float z = Random.Range(bounds.min.z, bounds.max.z);
+            // On positionne légèrement au-dessus du sol
+            Vector3 candidate = new Vector3(x, bounds.center.y + 1f, z);
+
+            // Vérifie qu’aucun obstacle n’est dans un rayon agentRadius
+            if (!Physics.CheckSphere(candidate, agentRadius, obstacleMask))
+            {
+                return candidate;
+            }
+        }
+        // Fallback : on renvoie le centre (au pire)
+        return bounds.center + Vector3.up;
+    }
     private void ResetScene() {
         resetTimer = 0;
 
-        foreach (var item in agentsList) {
-             var newStartPos = item.startingPosition;
-             var newStartRot = item.startingRotation;
-             if (placeRandomly) {
-                 // Random position
-                 var rndX = Random.Range(-rnd_x_width / 2, rnd_x_width / 2);
-                 var rndZ = Random.Range(-rnd_z_width / 2, rnd_z_width / 2);
-                 newStartPos += new Vector3(rndX, 0f, rndZ);
-
-                 // Random rotation
-                 var rndRot = Random.Range(rotMin, rotMax);
-                 newStartRot = Quaternion.Euler(0, rndRot, 0);
-             }
-
-             item.agent.transform.SetPositionAndRotation(newStartPos, newStartRot);
+        foreach (var item in agentsList)
+        {
+            Vector3 spawnPos = placeRandomly 
+                ? SampleSafePosition() 
+                : item.startingPosition;
+            item.agent.transform.SetPositionAndRotation(
+                spawnPos, 
+                placeRandomly
+                    ? Quaternion.Euler(0, Random.Range(rotMin, rotMax), 0)
+                    : item.startingRotation
+            );
         }
 
         foreach (var item in killedPreys)

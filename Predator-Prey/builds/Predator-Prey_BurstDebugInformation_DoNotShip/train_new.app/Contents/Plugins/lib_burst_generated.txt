@@ -1,4 +1,4 @@
-Library: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_scene.app/Contents/Plugins/lib_burst_generated
+Library: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_new.app/Contents/Plugins/lib_burst_generated
 --platform=macOS
 --backend=burst-llvm-18
 --target=ARMV8A_AARCH64_HALFFP
@@ -12,7 +12,7 @@ Library: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_sce
 --temp-folder=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/Burst
 --key-folder=/Applications/Unity/Hub/Editor/6000.1.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport
 --decode-folder=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/Burst
---output=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_scene.app/Contents/Plugins/lib_burst_generated
+--output=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_new.app/Contents/Plugins/lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[Unity.Sentis.CPUBackend+GlobalAverageVariancePoolJob, Unity.Sentis, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Sentis.CPUBackend+GlobalAverageVariancePoolJob&, Unity.Sentis, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--84f6e15c675b3973704dcd97eac0700c
@@ -29,7 +29,7 @@ Library: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_sce
 --temp-folder=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/Burst
 --key-folder=/Applications/Unity/Hub/Editor/6000.1.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport
 --decode-folder=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/Burst
---output=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_scene.app/Contents/Plugins/lib_burst_generated
+--output=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_new.app/Contents/Plugins/lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Sentis.IParallelForBatchExtensions+ParallelForBatchJobStruct`1[[Unity.Sentis.CPUBackend+ReduceL2FloatJob, Unity.Sentis, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null]], Unity.Sentis, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Sentis.CPUBackend+ReduceL2FloatJob&, Unity.Sentis, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--62366e2f02f59c02e9f0ca5cd56164cc
@@ -96,7 +96,7 @@ Library: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_sce
 --temp-folder=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/Burst
 --key-folder=/Applications/Unity/Hub/Editor/6000.1.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport
 --decode-folder=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/Burst
---output=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_scene.app/Contents/Plugins/lib_burst_generated
+--output=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_new.app/Contents/Plugins/lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
@@ -211,7 +211,7 @@ Library: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_sce
 --temp-folder=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/Burst
 --key-folder=/Applications/Unity/Hub/Editor/6000.1.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport
 --decode-folder=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/Burst
---output=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_scene.app/Contents/Plugins/lib_burst_generated
+--output=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_new.app/Contents/Plugins/lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Sentis.CPUBackend+ConvJob, Unity.Sentis, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null::CanUseDepthwiseConvKernel(Unity.Sentis.CPUBackend+ConvJob*, Unity.Sentis, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null)--75dfe5e48c0de75417d213538a382b19
@@ -227,7 +227,7 @@ Library: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_sce
 --temp-folder=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/Burst
 --key-folder=/Applications/Unity/Hub/Editor/6000.1.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport
 --decode-folder=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/Burst
---output=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_scene.app/Contents/Plugins/lib_burst_generated
+--output=/Users/andreamiele/marl-ssd-3d/Predator-Prey/Temp/BurstOutput/train_new.app/Contents/Plugins/lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[Unity.Sentis.GPUPixelBurstJobs+FloatBytesAsIntJob, Unity.Sentis, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Sentis.GPUPixelBurstJobs+FloatBytesAsIntJob&, Unity.Sentis, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--d2a4234f3958190a9fc0a7d2ca4674c3
