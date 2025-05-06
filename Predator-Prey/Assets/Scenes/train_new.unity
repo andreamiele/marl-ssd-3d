@@ -177,7 +177,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2238473508075166106, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.4
+      value: -2.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238473508075166106, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.59
       objectReference: {fileID: 0}
     - target: {fileID: 2238473508075166106, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -206,6 +210,14 @@ PrefabInstance:
     - target: {fileID: 3439251548108276850, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_BehaviorName
       value: PredatorBehaviour1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3518335774987955804, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3518335774987955804, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.97
       objectReference: {fileID: 0}
     - target: {fileID: 3601092041381317503, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_DetectableTags.Array.size
@@ -262,6 +274,14 @@ PrefabInstance:
     - target: {fileID: 4387225619793986667, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608568304021992363, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608568304021992363, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.2
       objectReference: {fileID: 0}
     - target: {fileID: 4608568304021992363, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -420,8 +440,12 @@ PrefabInstance:
       value: PredatorBehaviour2
       objectReference: {fileID: 0}
     - target: {fileID: 8284675555965929462, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284675555965929462, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.72
+      value: 9.82
       objectReference: {fileID: 0}
     - target: {fileID: 8370363885275416236, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -501,7 +525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8879782344660909694, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.68
+      value: 9.74
       objectReference: {fileID: 0}
     - target: {fileID: 8879782344660909694, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -631,6 +655,11 @@ MonoBehaviour:
   predatorRotationSpeed: 2
   preyTranslationSpeed: 4
   preyRotationSpeed: 1.5
+  placeRandomly: 1
+  rnd_x_width: 2.5
+  rnd_z_width: 2.5
+  rotMin: 0
+  rotMax: 360
   inferenceEnable: 0
   inferenceLogDir: inference_logs
   agentsList:
@@ -662,7 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a9974f15b494556a2c736f7296c90e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2
+  radius: 5
 --- !u!1 &340520448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1466897388798018336, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -698,7 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a9974f15b494556a2c736f7296c90e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2
+  radius: 5
 --- !u!1 &975547207 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4294308772522030310, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -734,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a9974f15b494556a2c736f7296c90e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 15
+  radius: 5
 --- !u!1 &1475268030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3552009245790336636, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -756,6 +785,11 @@ MonoBehaviour:
   predatorRotationSpeed: 2
   preyTranslationSpeed: 4
   preyRotationSpeed: 1.5
+  placeRandomly: 1
+  rnd_x_width: 2.5
+  rnd_z_width: 2.5
+  rotMin: 0
+  rotMax: 360
   inferenceEnable: 0
   inferenceLogDir: inference_logs
   agentsList:
@@ -831,7 +865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a9974f15b494556a2c736f7296c90e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2
+  radius: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

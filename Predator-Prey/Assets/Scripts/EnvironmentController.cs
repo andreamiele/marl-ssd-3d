@@ -20,7 +20,11 @@ public class EnvironmentController : MonoBehaviour {
     public float predatorRotationSpeed    = 2f;
     public float preyTranslationSpeed     = 4f;
     public float preyRotationSpeed        = 1.5f;
-    
+    public bool placeRandomly = false;
+    public float rnd_x_width = 2.5f;
+    public float rnd_z_width = 2.5f;
+    public float rotMin = 0f;
+    public float rotMax = 360f;
     public bool inferenceEnable = false;
     public string inferenceLogDir = "inference_logs";
     private string inferenceLogPath;
@@ -33,7 +37,7 @@ public class EnvironmentController : MonoBehaviour {
     private List<Agent> killedPreys = new List<Agent>();
     private int killedPreysCount = 0;
 
-    public int maxEnvironmentSteps = 100;
+    public int maxEnvironmentSteps = 25000;
     private int resetTimer = 0;
 
     public float soloCatchReward = 1f;
@@ -156,9 +160,20 @@ public class EnvironmentController : MonoBehaviour {
         resetTimer = 0;
 
         foreach (var item in agentsList) {
-            var startingPosition = item.startingPosition;
-            var startingRotation = item.startingRotation;
-            item.agent.transform.SetPositionAndRotation(startingPosition, startingRotation);
+             var newStartPos = item.startingPosition;
+             var newStartRot = item.startingRotation;
+             if (placeRandomly) {
+                 // Random position
+                 var rndX = Random.Range(-rnd_x_width / 2, rnd_x_width / 2);
+                 var rndZ = Random.Range(-rnd_z_width / 2, rnd_z_width / 2);
+                 newStartPos += new Vector3(rndX, 0f, rndZ);
+
+                 // Random rotation
+                 var rndRot = Random.Range(rotMin, rotMax);
+                 newStartRot = Quaternion.Euler(0, rndRot, 0);
+             }
+
+             item.agent.transform.SetPositionAndRotation(newStartPos, newStartRot);
         }
 
         foreach (var item in killedPreys)

@@ -124,6 +124,7 @@
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
 -r:"/Applications/Unity/Hub/Editor/6000.1.1f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
+-r:"/Applications/Unity/Hub/Editor/6000.1.1f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 -r:"/Applications/Unity/Hub/Editor/6000.1.1f1/Unity.app/Contents/Managed/Unity.CompilationPipeline.Common.dll"
 -r:"/Applications/Unity/Hub/Editor/6000.1.1f1/Unity.app/Contents/Managed/UnityEditor.Graphs.dll"
 -r:"/Applications/Unity/Hub/Editor/6000.1.1f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"

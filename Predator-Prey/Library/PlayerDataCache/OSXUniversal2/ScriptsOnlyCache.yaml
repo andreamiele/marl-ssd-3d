@@ -75,17 +75,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18178}
     - Class: 114
-      Script: {instanceID: 18180}
+      Script: {instanceID: 24090}
     - Class: 114
-      Script: {instanceID: 24088}
+      Script: {instanceID: 25150}
     - Class: 114
-      Script: {instanceID: 25220}
+      Script: {instanceID: 25224}
     - Class: 114
-      Script: {instanceID: 27554}
+      Script: {instanceID: 25972}
     - Class: 114
-      Script: {instanceID: 27946}
+      Script: {instanceID: 27564}
     - Class: 114
-      Script: {instanceID: 43716}
+      Script: {instanceID: 27954}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -99,16 +99,10 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 9c41e021e3eee2fb0096b8f29b51b5eb
+      Hash: bf3677f5a1ca39df9dbfa2af0aaed18c
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: PredatorAgent
-  - hash:
-      serializedVersion: 2
-      Hash: de1928b8b9a515d8a2f5bf272d098ca7
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PreyAgent
+    className: script
   - hash:
       serializedVersion: 2
       Hash: 04b6685b6f724c0d6024e6b6f96c8202
@@ -309,6 +303,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 9c41e021e3eee2fb0096b8f29b51b5eb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PredatorAgent
+  - hash:
+      serializedVersion: 2
       Hash: 1553f209ae0b2d5d3a35685fca55f9c3
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -399,6 +399,12 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
+      Hash: de1928b8b9a515d8a2f5bf272d098ca7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PreyAgent
+  - hash:
+      serializedVersion: 2
       Hash: 33f160a5c07e580c29aba2bd1e4db811
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -451,6 +457,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: f4bd2a2fb388ee1099dbedf836ef92ce
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CameraView
   - hash:
       serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
@@ -549,7 +561,7 @@ ScriptsOnlyBuild:
     className: NavMeshModifierVolume
   - hash:
       serializedVersion: 2
-      Hash: 91e725a61175cc20eff79618a036f1fd
+      Hash: d9be515f42dc8d70aba2cb6c3a90de69
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: EnvironmentController
@@ -667,19 +679,7 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: f4bd2a2fb388ee1099dbedf836ef92ce
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CameraView
-  - hash:
-      serializedVersion: 2
-      Hash: bf3677f5a1ca39df9dbfa2af0aaed18c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: script
   platform: 2
   scenePathNames:
   - Assets/Scenes/train_new.unity
-  playerPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/train_new.app
+  playerPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/builds/train_scene.app
