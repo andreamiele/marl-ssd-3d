@@ -29,9 +29,9 @@ public class PreyAgent : Agent {
     }
 
     public override void Heuristic(in ActionBuffers actionsOut) {
-        ActionSegment<float> continuousActions = actionsOut.ContinuousActions;
-        continuousActions[0] = Input.GetAxisRaw("Vertical");
-        continuousActions[1] = Input.GetAxisRaw("Horizontal");
+        var continuousActionsOut = actionsOut.ContinuousActions;
+        continuousActionsOut[0] = Random.Range(-1f, 1f);
+        continuousActionsOut[1] = Random.Range(-1f, 1f);
     }
 
     private void ChangeAnimationState(string newState) {
