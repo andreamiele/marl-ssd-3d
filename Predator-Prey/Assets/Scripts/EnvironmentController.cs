@@ -135,8 +135,12 @@ public class EnvironmentController : MonoBehaviour {
                 if (distance <= catchRadius) participants++;
             }
         }
-        if (participants == 1)   loneWolfCaptures++;
-        totalCaptures++;
+        Academy.Instance.StatsRecorder.Add(
+            // one key per arena; drop gameObject.name if you prefer global
+            $"lone_wolf_rate/{gameObject.name}",
+            participants == 1 ? 1f : 0f,          // 1 = solo, 0 = team
+            StatAggregationMethod.Average);       // ML‑Agents averages inside each
+                                                // summary window (e.g. 1000 steps)
 
         float preyReward = 0f;
         if (participants == 1) {
@@ -161,7 +165,6 @@ public class EnvironmentController : MonoBehaviour {
         KillAgent(caughtPrey);
 
         if (killedPreysCount == preysCount) {
-            LogArenaMetrics();
             foreach (var item in agentsList) {
                 if (item.agent is PredatorAgent predatorAgent)
                     predatorAgent.LogMetrics();
@@ -217,17 +220,5 @@ public class EnvironmentController : MonoBehaviour {
 
         killedPreys = new List<Agent>();
         killedPreysCount = 0;
-    }
-
-    private void LogArenaMetrics()
-    {
-        if (totalCaptures == 0) return;      // avoid NaN
-        float lwRate = (float)loneWolfCaptures / totalCaptures;
-
-        var recorder = Academy.Instance.StatsRecorder;
-        recorder.Add($"lone_wolf_rate/{gameObject.name}", lwRate, 
-                    StatAggregationMethod.Average); // Average across agents & envs :contentReference[oaicite:2]{index=2});
-
-        totalCaptures = loneWolfCaptures = 0;   // reset counters for next episode
     }
 }
