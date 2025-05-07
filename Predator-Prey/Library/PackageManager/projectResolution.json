@@ -1,18 +1,18 @@
 {
   "context": {
-    "projectPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Packages",
+    "projectPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Packages",
     "unityVersion": "6000.1.1f1"
   },
   "inputs": [
-    "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Packages/manifest.json",
-    "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Packages/packages-lock.json",
+    "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Packages/manifest.json",
+    "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Packages/packages-lock.json",
     "/Applications/Unity/Hub/Editor/6000.1.1f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
     "com.unity.ai.navigation@2.0.7": {
       "name": "com.unity.ai.navigation",
       "displayName": "AI Navigation",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ai.navigation@39ae74efb85f",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ai.navigation@39ae74efb85f",
       "fingerprint": "39ae74efb85f9b44dc389774fc59c2ce4a8aa3b6",
       "editorCompatibility": "6000.0.0a1",
       "version": "2.0.7",
@@ -22,7 +22,7 @@
     "com.unity.collab-proxy@2.7.1": {
       "name": "com.unity.collab-proxy",
       "displayName": "Version Control",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.collab-proxy@50ac96531b63",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.collab-proxy@50ac96531b63",
       "fingerprint": "50ac96531b6358586ccfdf8cc845939bf50d9fab",
       "editorCompatibility": "2021.3.0f1",
       "version": "2.7.1",
@@ -32,7 +32,7 @@
     "com.unity.ide.rider@3.0.36": {
       "name": "com.unity.ide.rider",
       "displayName": "JetBrains Rider Editor",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db",
       "fingerprint": "4d374c7eb6db6907c7e6925e3086c3c73f926e13",
       "editorCompatibility": "2019.4.6f1",
       "version": "3.0.36",
@@ -42,7 +42,7 @@
     "com.unity.ide.visualstudio@2.0.23": {
       "name": "com.unity.ide.visualstudio",
       "displayName": "Visual Studio Editor",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.visualstudio@198cdf337d13",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.visualstudio@198cdf337d13",
       "fingerprint": "198cdf337d13c83ca953581515630d66b779e92b",
       "editorCompatibility": "2019.4.25f1",
       "version": "2.0.23",
@@ -52,7 +52,7 @@
     "com.unity.ide.vscode@1.2.5": {
       "name": "com.unity.ide.vscode",
       "displayName": "Visual Studio Code Editor",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.vscode@82e68656b7bd",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.vscode@82e68656b7bd",
       "fingerprint": "82e68656b7bdc5da8beb1fbaf1bb4ecf13456d51",
       "editorCompatibility": "2019.2.0a12",
       "version": "1.2.5",
@@ -62,7 +62,7 @@
     "com.unity.ml-agents@3.0.0": {
       "name": "com.unity.ml-agents",
       "displayName": "ML Agents",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ml-agents@2b4ded88494d",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ml-agents@2b4ded88494d",
       "fingerprint": "2b4ded88494d1338cea1b3eb7364ff4dfe142399",
       "editorCompatibility": "2023.2.0a1",
       "version": "3.0.0",
@@ -72,7 +72,7 @@
     "com.unity.multiplayer.center@1.0.0": {
       "name": "com.unity.multiplayer.center",
       "displayName": "Multiplayer Center",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546",
       "fingerprint": "f3fb577b3546594b97b8cc34307cd621f60f1c73",
       "editorCompatibility": "6000.0.0a1",
       "version": "1.0.0",
@@ -82,7 +82,7 @@
     "com.unity.test-framework@1.5.1": {
       "name": "com.unity.test-framework",
       "displayName": "Test Framework",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.test-framework@f6ed7fd5ec8f",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.test-framework@f6ed7fd5ec8f",
       "fingerprint": "f6ed7fd5ec8f82bf5b960dcafb5c3457ff24c4d7",
       "editorCompatibility": "2022.3.0a1",
       "version": "1.5.1",
@@ -92,7 +92,7 @@
     "com.unity.timeline@1.8.8": {
       "name": "com.unity.timeline",
       "displayName": "Timeline",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.timeline@fa3a0bab2b90",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.timeline@fa3a0bab2b90",
       "fingerprint": "fa3a0bab2b909389f8e6c20d5ff275c9e15ae0a2",
       "editorCompatibility": "2021.3.0a1",
       "version": "1.8.8",
@@ -102,7 +102,7 @@
     "com.unity.toolchain.macos-arm64-linux-x86_64@2.0.4": {
       "name": "com.unity.toolchain.macos-arm64-linux-x86_64",
       "displayName": "Toolchain MacOS Arm64 Linux x64",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.toolchain.macos-arm64-linux-x86_64@53a346a622fd",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.toolchain.macos-arm64-linux-x86_64@53a346a622fd",
       "fingerprint": "53a346a622fd7e04d2465157c5a807c30fac712e",
       "editorCompatibility": "2021.3.0a1",
       "version": "2.0.4",
@@ -112,7 +112,7 @@
     "com.unity.ugui@2.0.0": {
       "name": "com.unity.ugui",
       "displayName": "Unity UI",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ugui@8a519b6be09c",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ugui@8a519b6be09c",
       "fingerprint": "8a519b6be09c15496d8d0cb3eb25bfadb04d1dab",
       "editorCompatibility": "2019.2.0a1",
       "version": "2.0.0",
@@ -394,7 +394,7 @@
     "com.unity.sysroot@2.0.10": {
       "name": "com.unity.sysroot",
       "displayName": "Sysroot Base",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sysroot@7bbbb9339c14",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sysroot@7bbbb9339c14",
       "fingerprint": "7bbbb9339c143f6fbccaeb0a52c77b9217b35a71",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.0.10",
@@ -404,7 +404,7 @@
     "com.unity.sysroot.linux-x86_64@2.0.9": {
       "name": "com.unity.sysroot.linux-x86_64",
       "displayName": "Sysroot Linux x64",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sysroot.linux-x86_64@1998d1c7730e",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sysroot.linux-x86_64@1998d1c7730e",
       "fingerprint": "1998d1c7730e48fa49f28d983fececfc9cbd970b",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.0.9",
@@ -414,7 +414,7 @@
     "com.unity.ext.nunit@2.0.5": {
       "name": "com.unity.ext.nunit",
       "displayName": "Custom NUnit",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ext.nunit@031a54704bff",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ext.nunit@031a54704bff",
       "fingerprint": "031a54704bffe39e6a0324909f8eaa4565bdebf2",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.0.5",
@@ -424,7 +424,7 @@
     "com.unity.sentis@2.1.2": {
       "name": "com.unity.sentis",
       "displayName": "Sentis",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sentis@c51693b52067",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sentis@c51693b52067",
       "fingerprint": "c51693b520678de462e1dbf1515869d9d63b6e96",
       "editorCompatibility": "2022.3.11f1",
       "version": "2.1.2",
@@ -434,7 +434,7 @@
     "com.unity.burst@1.8.21": {
       "name": "com.unity.burst",
       "displayName": "Burst",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.burst@59eb6f11d242",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.burst@59eb6f11d242",
       "fingerprint": "59eb6f11d2422f95682320d9daa3e79fdb076744",
       "editorCompatibility": "2020.3.0a1",
       "version": "1.8.21",
@@ -444,7 +444,7 @@
     "com.unity.collections@2.5.1": {
       "name": "com.unity.collections",
       "displayName": "Collections",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.collections@56bff8827a7e",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.collections@56bff8827a7e",
       "fingerprint": "56bff8827a7ef6d44fcee4f36e558a74da89c1a0",
       "editorCompatibility": "2022.3.11f1",
       "version": "2.5.1",
@@ -454,7 +454,7 @@
     "com.unity.nuget.mono-cecil@1.11.4": {
       "name": "com.unity.nuget.mono-cecil",
       "displayName": "Mono Cecil",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f",
       "fingerprint": "d6f9955a5d5f84d45442ff1ad0fb694cc6e2fd62",
       "editorCompatibility": "2018.4.0a1",
       "version": "1.11.4",
@@ -464,7 +464,7 @@
     "com.unity.test-framework.performance@3.1.0": {
       "name": "com.unity.test-framework.performance",
       "displayName": "Performance testing API",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.test-framework.performance@92d1d09a72ed",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.test-framework.performance@92d1d09a72ed",
       "fingerprint": "92d1d09a72ed696fa23fd76c675b29d211664b50",
       "editorCompatibility": "2020.3.0a1",
       "version": "3.1.0",
@@ -474,7 +474,7 @@
     "com.unity.mathematics@1.3.2": {
       "name": "com.unity.mathematics",
       "displayName": "Mathematics",
-      "resolvedPath": "/Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.mathematics@8017b507cc74",
+      "resolvedPath": "/Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.mathematics@8017b507cc74",
       "fingerprint": "8017b507cc74bf0a1dd14b18aa860569f807314d",
       "editorCompatibility": "2021.3.0a1",
       "version": "1.3.2",

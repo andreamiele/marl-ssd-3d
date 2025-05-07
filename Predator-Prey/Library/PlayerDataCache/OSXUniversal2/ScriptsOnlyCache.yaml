@@ -680,4 +680,4 @@ ScriptsOnlyBuild:
   platform: 2
   scenePathNames:
   - Assets/Scenes/train_new.unity
-  playerPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/train_new.app
+  playerPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/builds/t.app
