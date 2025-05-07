@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_BehaviorName
       value: PredatorBehaviour2
       objectReference: {fileID: 0}
+    - target: {fileID: 7691181764018730, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 478000435235491724, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_DetectableTags.Array.size
       value: 3
@@ -207,9 +211,17 @@ PrefabInstance:
       propertyPath: m_BehaviorType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3354828128837824476, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3439251548108276850, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_BehaviorName
       value: PredatorBehaviour1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439251548108276850, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3518335774987955804, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -439,6 +451,10 @@ PrefabInstance:
       propertyPath: m_BehaviorType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7705765306648201595, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7952947168008047324, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_Name
       value: AllMapsBundle
@@ -446,6 +462,10 @@ PrefabInstance:
     - target: {fileID: 8247767120315292899, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_BehaviorName
       value: PredatorBehaviour2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247767120315292899, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8284675555965929462, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -527,6 +547,10 @@ PrefabInstance:
       propertyPath: m_BehaviorName
       value: PredatorBehaviour1
       objectReference: {fileID: 0}
+    - target: {fileID: 8729129634440129047, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8769287112098209100, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_Name
       value: Predator_2
@@ -558,6 +582,10 @@ PrefabInstance:
     - {fileID: 1035830381713072351, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
     - {fileID: 374715597212720261, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
     - {fileID: 2863647829207707472, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+    - {fileID: 3432465191279495369, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+    - {fileID: 2073089569479226231, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+    - {fileID: 5311918046294762756, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+    - {fileID: 881018625791174380, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

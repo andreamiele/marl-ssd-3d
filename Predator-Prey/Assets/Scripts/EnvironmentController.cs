@@ -53,6 +53,14 @@ public class EnvironmentController : MonoBehaviour {
     public float catchRadius     = 15f;
 
     void Start() {
+        soloCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("solo_catch_reward", 1f);
+        teamCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("team_catch_reward", 1.5f);
+        catchRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 15f);
+        
+        Debug.Log("[EnvironmentController] soloCatchReward = " + soloCatchReward);
+        Debug.Log("[EnvironmentController] teamCatchReward = " + teamCatchReward);
+        Debug.Log("[EnvironmentController] catchRadius = " + catchRadius);
+
         spawnArea = spawnAreaObject.GetComponent<Collider>();
         
         foreach (var item in agentsList) {
@@ -91,8 +99,6 @@ public class EnvironmentController : MonoBehaviour {
         foreach (var item in agentsList)
             if (item.agent.transform.position.y < -10)
                 item.agent.transform.position = item.startingPosition;
-
-        // Debug.Log("FixedUpdate is running : " + resetTimer);
 
         resetTimer += 1;
         if (resetTimer >= maxEnvironmentSteps && maxEnvironmentSteps > 0) {
@@ -150,9 +156,8 @@ public class EnvironmentController : MonoBehaviour {
 
         if (killedPreysCount == preysCount) {
             foreach (var item in agentsList) {
-                if (item.agent.CompareTag("Predator")) {
-                    ((PredatorAgent)item.agent).LogMetrics();
-                }
+                if (item.agent is PredatorAgent predatorAgent)
+                    predatorAgent.LogMetrics();
                 item.agent.EndEpisode();
             }
             ResetScene();
@@ -166,11 +171,9 @@ public class EnvironmentController : MonoBehaviour {
         killedPreysCount += 1;
     }
 
-    private Vector3 SampleSafePosition()
-    {
+    private Vector3 SampleSafePosition() {
         var bounds = spawnArea.bounds;
-        for (int i = 0; i < maxSpawnTries; i++)
-        {
+        for (int i = 0; i < maxSpawnTries; i++) {
             // Tirage aléatoire dans le XZ du spawnArea
             float x = Random.Range(bounds.min.x, bounds.max.x);
             float z = Random.Range(bounds.min.z, bounds.max.z);
@@ -178,14 +181,14 @@ public class EnvironmentController : MonoBehaviour {
             Vector3 candidate = new Vector3(x, bounds.center.y + 1f, z);
 
             // Vérifie qu’aucun obstacle n’est dans un rayon agentRadius
-            if (!Physics.CheckSphere(candidate, agentRadius, obstacleMask))
-            {
+            if (!Physics.CheckSphere(candidate, agentRadius, obstacleMask)) {
                 return candidate;
             }
         }
         // Fallback : on renvoie le centre (au pire)
         return bounds.center + Vector3.up;
     }
+
     private void ResetScene() {
         resetTimer = 0;
 

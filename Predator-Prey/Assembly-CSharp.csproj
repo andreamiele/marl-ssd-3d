@@ -58,6 +58,7 @@
     <Compile Include="Assets/Blink/Art/Animals/Stylized/Demo_Animals/DemoData/AnimationDemo.cs" />
     <Compile Include="Assets/Quirky Series Ultimate/_Scripts/QuirkySeriesDemo.cs" />
     <Compile Include="Assets/Scipts/PredatorAgent.cs" />
+    <Compile Include="Assets/Scipts/script.cs" />
     <Compile Include="Assets/Scripts/EnvironmentController.cs" />
   </ItemGroup>
   <ItemGroup>

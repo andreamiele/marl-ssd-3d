@@ -71,15 +71,13 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 0}
+      Script: {instanceID: 24088}
     - Class: 114
-      Script: {instanceID: 18178}
+      Script: {instanceID: 25148}
     - Class: 114
-      Script: {instanceID: 24090}
+      Script: {instanceID: 25222}
     - Class: 114
-      Script: {instanceID: 25150}
-    - Class: 114
-      Script: {instanceID: 25224}
+      Script: {instanceID: 25616}
     - Class: 114
       Script: {instanceID: 25972}
     - Class: 114
@@ -97,12 +95,6 @@ ScriptsOnlyBuild:
     - Class: 205
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: bf3677f5a1ca39df9dbfa2af0aaed18c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: script
   - hash:
       serializedVersion: 2
       Hash: 04b6685b6f724c0d6024e6b6f96c8202
@@ -379,6 +371,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: bf3677f5a1ca39df9dbfa2af0aaed18c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: script
   - hash:
       serializedVersion: 2
       Hash: cb8a660001aa7c71786ed90b8c38ae8f
@@ -682,4 +680,4 @@ ScriptsOnlyBuild:
   platform: 2
   scenePathNames:
   - Assets/Scenes/train_new.unity
-  playerPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/builds/train_new.app
+  playerPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/train_new.app

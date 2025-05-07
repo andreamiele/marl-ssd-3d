@@ -57,11 +57,14 @@ public class PredatorAgent : Agent {
 
     public void LogMetrics() {
         var recorder = Academy.Instance.StatsRecorder;
-        if ((teamCapturesCount + soloCapturesCount) == 0) {
-            recorder.Add($"lone_wolf_rate_{this.name}", 0f, StatAggregationMethod.Average);
-        } else {
-            float loneWolfRate = (float)soloCapturesCount / (teamCapturesCount + soloCapturesCount);
-            recorder.Add($"lone_wolf_rate_{this.name}", loneWolfRate, StatAggregationMethod.Average);
-        }
+        float loneWolfRate = 0f;
+        if ((teamCapturesCount + soloCapturesCount) == 0)
+            loneWolfRate = 0f;
+        else
+            loneWolfRate = (float)soloCapturesCount / (teamCapturesCount + soloCapturesCount);
+        recorder.Add($"lone_wolf_rate_{name}", loneWolfRate, StatAggregationMethod.Average);
+        Debug.Log($"[PredatorAgent] lone_wolf_rate_{name} = {loneWolfRate}");
+        Debug.Log($"[PredatorAgent] solo_captures_count_{name} = {soloCapturesCount}");
+        Debug.Log($"[PredatorAgent] team_captures_count_{name} = {teamCapturesCount}");
     }
 }

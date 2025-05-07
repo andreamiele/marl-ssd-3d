@@ -1,25 +1,25 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Packages/manifest.json
+    m_FilePath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638820333650000000
+      ticks: 638821262580000000
     m_Hash: 3151342023
   m_LockFileStatus:
-    m_FilePath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Packages/packages-lock.json
+    m_FilePath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638820333650000000
+      ticks: 638821262580000000
     m_Hash: 3772503533
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Packages
+m_ProjectPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Packages
 m_EditorVersion: 6000.1.1f1 (7197418f847b)
 m_ResolvedPackages:
 - packageId: com.unity.ai.navigation@2.0.7
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.7
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ai.navigation@39ae74efb85f
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ai.navigation@39ae74efb85f
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -139,7 +139,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.7.1
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.collab-proxy@50ac96531b63
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.collab-proxy@50ac96531b63
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -324,7 +324,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.36
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -442,7 +442,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.23
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.visualstudio@198cdf337d13
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.visualstudio@198cdf337d13
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -548,7 +548,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.2.5
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.vscode@82e68656b7bd
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ide.vscode@82e68656b7bd
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -641,7 +641,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.0
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ml-agents@2b4ded88494d
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ml-agents@2b4ded88494d
   assetPath: Packages/com.unity.ml-agents
   name: com.unity.ml-agents
   displayName: ML Agents
@@ -795,7 +795,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -885,7 +885,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.5.1
   source: 2
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.test-framework@f6ed7fd5ec8f
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.test-framework@f6ed7fd5ec8f
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -1023,7 +1023,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.8
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.timeline@fa3a0bab2b90
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.timeline@fa3a0bab2b90
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1207,7 +1207,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.4
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.toolchain.macos-arm64-linux-x86_64@53a346a622fd
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.toolchain.macos-arm64-linux-x86_64@53a346a622fd
   assetPath: Packages/com.unity.toolchain.macos-arm64-linux-x86_64
   name: com.unity.toolchain.macos-arm64-linux-x86_64
   displayName: Toolchain MacOS Arm64 Linux x64
@@ -1291,7 +1291,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ugui@8a519b6be09c
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ugui@8a519b6be09c
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -3804,7 +3804,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.10
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sysroot@7bbbb9339c14
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sysroot@7bbbb9339c14
   assetPath: Packages/com.unity.sysroot
   name: com.unity.sysroot
   displayName: Sysroot Base
@@ -3894,7 +3894,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.9
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sysroot.linux-x86_64@1998d1c7730e
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sysroot.linux-x86_64@1998d1c7730e
   assetPath: Packages/com.unity.sysroot.linux-x86_64
   name: com.unity.sysroot.linux-x86_64
   displayName: Sysroot Linux x64
@@ -3985,7 +3985,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.5
   source: 2
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ext.nunit@031a54704bff
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.ext.nunit@031a54704bff
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -4064,7 +4064,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.1.2
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sentis@c51693b52067
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.sentis@c51693b52067
   assetPath: Packages/com.unity.sentis
   name: com.unity.sentis
   displayName: Sentis
@@ -4192,7 +4192,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.8.21
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.burst@59eb6f11d242
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.burst@59eb6f11d242
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -4425,7 +4425,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.5.1
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.collections@56bff8827a7e
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.collections@56bff8827a7e
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -4600,7 +4600,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.11.4
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -4682,7 +4682,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.1.0
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.test-framework.performance@92d1d09a72ed
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.test-framework.performance@92d1d09a72ed
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -4817,7 +4817,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.3.2
   source: 1
-  resolvedPath: /Users/andreamiele/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.mathematics@8017b507cc74
+  resolvedPath: /Users/jnsffrt/epfl/ma2/cs503-visual-intelligence/marl-ssd-3d/Predator-Prey/Library/PackageCache/com.unity.mathematics@8017b507cc74
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics

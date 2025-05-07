@@ -102,7 +102,19 @@ engine_settings:
   target_frame_rate: -1
   capture_frame_rate: 60
   no_graphics: false
-environment_parameters: null
+environment_parameters:
+  catch_radius:
+    sampler_type: constant
+    sampler_parameters:
+      value: 10.0
+  solo_catch_reward:
+    sampler_type: constant
+    sampler_parameters:
+      value: 1.0
+  team_catch_reward:
+    sampler_type: constant
+    sampler_parameters:
+      value: 1.7
 checkpoint_settings:
   run_id: ppo
   initialize_from: null
