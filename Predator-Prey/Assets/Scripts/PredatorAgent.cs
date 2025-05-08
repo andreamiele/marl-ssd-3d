@@ -12,9 +12,6 @@ public class PredatorAgent : Agent {
     private const string RUN_BACKWARD = "RunBack";
     private const string WALK_FORWARD = "Walk Forward";
     private const string WALK_BACKWARD = "Walk Backward";
-    
-    public int soloCapturesCount = 0;
-    public int teamCapturesCount = 0; 
 
     private EnvironmentController environmentController;
 
@@ -53,18 +50,5 @@ public class PredatorAgent : Agent {
 
     private bool IsAnimationPlaying(Animator animator, string stateName) {
         return (animator.GetCurrentAnimatorStateInfo(0).IsName(stateName) && animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f);
-    }
-
-    public void LogMetrics() {
-        var recorder = Academy.Instance.StatsRecorder;
-        float loneWolfRate = 0f;
-        if ((teamCapturesCount + soloCapturesCount) == 0)
-            loneWolfRate = 0f;
-        else
-            loneWolfRate = (float)soloCapturesCount / (teamCapturesCount + soloCapturesCount);
-        recorder.Add($"lone_wolf_rate_{name}", loneWolfRate, StatAggregationMethod.Average);
-        Debug.Log($"[PredatorAgent] lone_wolf_rate_{name} = {loneWolfRate}");
-        Debug.Log($"[PredatorAgent] solo_captures_count_{name} = {soloCapturesCount}");
-        Debug.Log($"[PredatorAgent] team_captures_count_{name} = {teamCapturesCount}");
     }
 }

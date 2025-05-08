@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
 using System.IO;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class EnvironmentController : MonoBehaviour {
     [System.Serializable]
@@ -33,9 +36,13 @@ public class EnvironmentController : MonoBehaviour {
     public float rnd_z_width = 2.5f;
     public float rotMin = 0f;
     public float rotMax = 360f;
+
     public bool inferenceEnable = false;
+    public string inferenceName = "Predator-Prey";
     public string inferenceLogDir = "inference_logs";
     private string inferenceLogPath;
+    public int inferenceEpisode = 0;
+    public int inferenceMaxEpisode = 1000;
 
     public List<AgentInfo> agentsList = new List<AgentInfo>();
 
@@ -51,7 +58,6 @@ public class EnvironmentController : MonoBehaviour {
     public float soloCatchReward = 1f;
     public float teamCatchReward = 1.5f;
     public float catchRadius     = 15f;
-
 
     private int totalCaptures = 0;
     private int loneWolfCaptures = 0;
@@ -80,9 +86,11 @@ public class EnvironmentController : MonoBehaviour {
 
         if (inferenceEnable) {
             Directory.CreateDirectory(inferenceLogDir);
-            inferenceLogPath = Path.Combine(inferenceLogDir, gameObject.name + ".txt");
-            if (!File.Exists(inferenceLogPath))
-                File.CreateText(inferenceLogPath);
+            inferenceLogPath = Path.Combine(inferenceLogDir, inferenceName + ".txt");
+            using (var writer = File.CreateText(inferenceLogPath)) {
+                writer.WriteLine($"[Inference] {inferenceName}");
+            }
+            Time.timeScale = 10f;
         }
         ResetScene();
     }
@@ -107,19 +115,39 @@ public class EnvironmentController : MonoBehaviour {
         resetTimer += 1;
         if (resetTimer >= maxEnvironmentSteps && maxEnvironmentSteps > 0) {
             if (inferenceEnable) {
+                int prey_survived_step = 0;
                 foreach (var item in agentsList) {
                     if (item.agent.CompareTag("Prey")) {   
                         var preyAgent = (PreyAgent)item.agent;
+                        prey_survived_step = preyAgent.survivedSteps;
                         preyAgent.survivedSteps = 0;
                     }
                 }
+
+                using (StreamWriter writer = new StreamWriter(inferenceLogPath, true)) {
+                    float score = 2 - (float)((1 * loneWolfCaptures) + (2 * (totalCaptures - loneWolfCaptures))) / (float)totalCaptures;
+                    string line = $"[Episode {inferenceEpisode}] [Timeout] " +
+                        $"total_captures = {totalCaptures}, " +
+                        $"lone_wolf_captures = {loneWolfCaptures}, " +
+                        $"prey_survived_step = {prey_survived_step}, " + 
+                        $"score = {score}";
+                    writer.WriteLine(line);
+                    Debug.Log(line);
+                }
+
+                inferenceEpisode += 1;
+                if (inferenceEpisode >= inferenceMaxEpisode) {
+                    Debug.Log("[EnvironmentController] Inference finished.");
+                    #if UNITY_EDITOR
+                        EditorApplication.isPlaying = false;
+                    #else
+                        Application.Quit();
+                    #endif
+                }
             }
 
-            foreach (var item in agentsList) {
-                if (item.agent is PredatorAgent predatorAgent)
-                    predatorAgent.LogMetrics();
+            foreach (var item in agentsList) 
                 item.agent.EndEpisode();
-            }
             ResetScene();
         }
     }
@@ -135,6 +163,8 @@ public class EnvironmentController : MonoBehaviour {
                 if (distance <= catchRadius) participants++;
             }
         }
+
+        totalCaptures += 1;
         Academy.Instance.StatsRecorder.Add(
             // one key per arena; drop gameObject.name if you prefer global
             $"lone_wolf_rate/{gameObject.name}",
@@ -144,20 +174,17 @@ public class EnvironmentController : MonoBehaviour {
 
         float preyReward = 0f;
         if (participants == 1) {
-            catcherPredator.soloCapturesCount += 1;
+            loneWolfCaptures += 1;
             catcherPredator.AddReward(soloCatchReward);
             preyReward = -soloCatchReward;
         } else {
-            foreach (var item in agentsList) {
+            foreach (var item in agentsList)
                 if (item.agent.CompareTag("Predator") &&
                     Vector3.Distance(
                         item.agent.transform.position,
                         caughtPrey.transform.position
-                    ) <= catchRadius) {
-                    ((PredatorAgent)item.agent).teamCapturesCount += 1;
+                    ) <= catchRadius)
                     item.agent.AddReward(teamCatchReward);
-                }
-            }
             preyReward = -teamCatchReward;
         }
 
@@ -165,11 +192,40 @@ public class EnvironmentController : MonoBehaviour {
         KillAgent(caughtPrey);
 
         if (killedPreysCount == preysCount) {
-            foreach (var item in agentsList) {
-                if (item.agent is PredatorAgent predatorAgent)
-                    predatorAgent.LogMetrics();
-                item.agent.EndEpisode();
+            if (inferenceEnable) {
+                int prey_survived_step = 0;
+                foreach (var item in agentsList) {
+                    if (item.agent.CompareTag("Prey")) {   
+                        var preyAgent = (PreyAgent)item.agent;
+                        prey_survived_step = preyAgent.survivedSteps;
+                        preyAgent.survivedSteps = 0;
+                    }
+                }
+
+                using (StreamWriter writer = new StreamWriter(inferenceLogPath, true)) {
+                    float score = 2 - (float)((1 * loneWolfCaptures) + (2 * (totalCaptures - loneWolfCaptures))) / (float)totalCaptures;
+                   string line = $"[Episode {inferenceEpisode}] [Timeout] " +
+                        $"total_captures = {totalCaptures}, " +
+                        $"lone_wolf_captures = {loneWolfCaptures}, " +
+                        $"prey_survived_step = {prey_survived_step}, " + 
+                        $"score = {score}";
+                    writer.WriteLine(line);
+                    Debug.Log(line);
+                }
+
+                inferenceEpisode += 1;
+                if (inferenceEpisode >= inferenceMaxEpisode) {
+                    Debug.Log("[EnvironmentController] Inference finished.");
+                    #if UNITY_EDITOR
+                        EditorApplication.isPlaying = false;
+                    #else
+                        Application.Quit();
+                    #endif
+                }
             }
+
+            foreach (var item in agentsList)
+                item.agent.EndEpisode();
             ResetScene();
         }
     }
@@ -202,8 +258,7 @@ public class EnvironmentController : MonoBehaviour {
     private void ResetScene() {
         resetTimer = 0;
 
-        foreach (var item in agentsList)
-        {
+        foreach (var item in agentsList) {
             Vector3 spawnPos = placeRandomly 
                 ? SampleSafePosition() 
                 : item.startingPosition;
