@@ -63,10 +63,12 @@ public class EnvironmentController : MonoBehaviour {
     private int loneWolfCaptures = 0;
 
     void Start() {
-        soloCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("solo_catch_reward", 1f);
-        teamCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("team_catch_reward", 1.5f);
-        catchRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 15f);
-        
+        if (!inferenceEnable) 
+        {
+            soloCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("solo_catch_reward", 1f);
+            teamCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("team_catch_reward", 1.5f);
+            catchRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 15f);
+        }
         Debug.Log("[EnvironmentController] soloCatchReward = " + soloCatchReward);
         Debug.Log("[EnvironmentController] teamCatchReward = " + teamCatchReward);
         Debug.Log("[EnvironmentController] catchRadius = " + catchRadius);
