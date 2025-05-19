@@ -6,18 +6,9 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 
 public class PredatorAgent : Agent {
-    private Animator animator;
-    private string currentState;
-    private const string RUN_FORWARD = "RunForward";
-    private const string RUN_BACKWARD = "RunBack";
-    private const string WALK_FORWARD = "Walk Forward";
-    private const string WALK_BACKWARD = "Walk Backward";
-
     private EnvironmentController environmentController;
 
     public void Start() {
-        animator = GetComponent<Animator>();
-        ChangeAnimationState(RUN_FORWARD);
         environmentController = GetComponentInParent<EnvironmentController>();
     }
 
@@ -39,16 +30,8 @@ public class PredatorAgent : Agent {
         if (other.gameObject.CompareTag("Prey")) {
             Agent preyAgent = other.gameObject.GetComponent<Agent>();
             environmentController.PredatorPreyCollision(this, preyAgent);
+        } else if (other.gameObject.CompareTag("Obstacle")) {
+            environmentController.predatorObstacleCollision(this);
         }
-    }
-
-    private void ChangeAnimationState(string newState) {
-        if (newState == currentState) return;
-        animator.Play(newState);
-        currentState = newState;
-    }
-
-    private bool IsAnimationPlaying(Animator animator, string stateName) {
-        return (animator.GetCurrentAnimatorStateInfo(0).IsName(stateName) && animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f);
     }
 }

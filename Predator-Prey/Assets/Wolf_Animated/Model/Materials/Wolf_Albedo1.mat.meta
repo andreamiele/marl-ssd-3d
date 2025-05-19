@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e3c3dcf3633222f478c7ebfc5d644ab0
+timeCreated: 1441555050
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 45505
+  packageName: Wolf Animated
+  packageVersion: 1.0
+  assetPath: Assets/Wolf_Animated/Model/Materials/Wolf_Albedo1.mat
+  uploadId: 80316

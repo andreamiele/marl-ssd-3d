@@ -29,7 +29,7 @@ public class EnvironmentController : MonoBehaviour {
 
     public float predatorTranslationSpeed = 5f;
     public float predatorRotationSpeed    = 2f;
-    public float preyTranslationSpeed     = 4f;
+    public float preyTranslationSpeed     = 2.5f;
     public float preyRotationSpeed        = 1.5f;
     public bool placeRandomly = false;
     public float rnd_x_width = 2.5f;
@@ -43,6 +43,8 @@ public class EnvironmentController : MonoBehaviour {
     private string inferenceLogPath;
     public int inferenceEpisode = 0;
     public int inferenceMaxEpisode = 1000;
+
+    public float obstacleCollisionPenalty = -0.2f;
 
     public List<AgentInfo> agentsList = new List<AgentInfo>();
 
@@ -152,6 +154,10 @@ public class EnvironmentController : MonoBehaviour {
                 item.agent.EndEpisode();
             ResetScene();
         }
+    }
+
+    public void predatorObstacleCollision(PredatorAgent predator) {
+        predator.AddReward(obstacleCollisionPenalty);
     }
 
     public void PredatorPreyCollision(PredatorAgent catcherPredator, Agent caughtPrey) {

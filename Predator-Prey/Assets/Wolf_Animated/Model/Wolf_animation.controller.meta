@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4207a14823e50e6438f37b401c727159
+timeCreated: 1441554835
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 45505
+  packageName: Wolf Animated
+  packageVersion: 1.0
+  assetPath: Assets/Wolf_Animated/Model/Wolf_animation.controller
+  uploadId: 80316

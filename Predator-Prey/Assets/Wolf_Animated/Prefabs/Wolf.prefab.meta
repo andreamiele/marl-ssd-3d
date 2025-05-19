@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f8243bb353e5cb74481bb26fe62fd298
+timeCreated: 1441560700
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 45505
+  packageName: Wolf Animated
+  packageVersion: 1.0
+  assetPath: Assets/Wolf_Animated/Prefabs/Wolf.prefab
+  uploadId: 80316

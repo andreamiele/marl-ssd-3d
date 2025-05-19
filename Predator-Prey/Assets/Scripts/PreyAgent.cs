@@ -7,16 +7,11 @@ using Unity.MLAgents.Sensors;
 
 
 public class PreyAgent : Agent {
-    private Animator animator;
-    private const string RUN = "Run";
-
     private string currentState;
     internal int survivedSteps = 0;
     private EnvironmentController environmentController;
 
     public void Start() {
-        animator = gameObject.GetComponent<Animator>();
-        ChangeAnimationState(RUN);
         environmentController = GetComponentInParent<EnvironmentController>();
     }
 
@@ -30,18 +25,21 @@ public class PreyAgent : Agent {
 
     public override void Heuristic(in ActionBuffers actionsOut) {
         var continuousActionsOut = actionsOut.ContinuousActions;
-        continuousActionsOut[0] = Random.Range(-1f, 1f);
+        continuousActionsOut[0] = Random.Range(0f, 1f);
         continuousActionsOut[1] = Random.Range(-1f, 1f);
     }
 
-    private void ChangeAnimationState(string newState) {
-        if (newState == currentState) return;
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.CompareTag("Obstacle")) {
+            Vector3 contactNormal = collision.contacts[0].normal;
 
-        animator.Play(newState);
-        currentState = newState;
-    }
+            Vector3 incoming = transform.forward;
+            Vector3 bounceDirection = Vector3.Reflect(incoming, contactNormal).normalized;
 
-    private bool IsAnimationPlaying(Animator animator, string stateName) {
-        return (animator.GetCurrentAnimatorStateInfo(0).IsName(stateName) && animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f);
+            Quaternion targetRotation = Quaternion.LookRotation(bounceDirection, Vector3.up);
+            transform.rotation = targetRotation;
+
+            transform.position += bounceDirection;
+        }
     }
 }
