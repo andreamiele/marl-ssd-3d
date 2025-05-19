@@ -68,6 +68,7 @@ public class EnvironmentController : MonoBehaviour {
     private int loneWolfCaptures = 0;
 
     void Start() {
+        Random.InitState(503);
         if (!inferenceEnable) 
         {
             soloCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("solo_catch_reward", 1f);
