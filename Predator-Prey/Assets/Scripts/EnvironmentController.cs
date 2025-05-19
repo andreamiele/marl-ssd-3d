@@ -202,11 +202,18 @@ public class EnvironmentController : MonoBehaviour {
         if (killedPreysCount == preysCount) {
             if (inferenceEnable) {
                 int prey_survived_step = 0;
+                float interPredatorDistance = -1f;
                 foreach (var item in agentsList) {
                     if (item.agent.CompareTag("Prey")) {   
                         var preyAgent = (PreyAgent)item.agent;
                         prey_survived_step = preyAgent.survivedSteps;
                         preyAgent.survivedSteps = 0;
+                    }
+                    else if (item.agent.CompareTag("Predator") && item.agent != catcherPredator) {
+                        interPredatorDistance = Vector3.Distance(
+                            catcherPredator.transform.position,
+                            item.agent.transform.position
+                        );
                     }
                 }
 
@@ -216,6 +223,7 @@ public class EnvironmentController : MonoBehaviour {
                         $"total_captures = {totalCaptures}, " +
                         $"lone_wolf_captures = {loneWolfCaptures}, " +
                         $"prey_survived_step = {prey_survived_step}, " + 
+                        $"predator_distance = {interPredatorDistance}, " +
                         $"score = {score}";
                     writer.WriteLine(line);
                     Debug.Log(line);
