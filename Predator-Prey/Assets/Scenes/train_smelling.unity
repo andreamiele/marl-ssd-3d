@@ -1179,7 +1179,7 @@ MonoBehaviour:
   soloCatchReward: 1
   teamCatchReward: 1
   catchRadius: 6.5
-  smellingEnable: 0
+  smellingEnable: 1
   smellingDecayRate: 0.95
   smellingRadius: 3
   smellingCellSize: 1
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
+    VectorObservationSize: 49
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   soloCatchReward: 1
   teamCatchReward: 1
   catchRadius: 6.5
-  smellingEnable: 0
+  smellingEnable: 1
   smellingDecayRate: 0.95
   smellingRadius: 3
   smellingCellSize: 1
@@ -2260,7 +2260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
+    VectorObservationSize: 49
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -2763,7 +2763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
+    VectorObservationSize: 49
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -4196,7 +4196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
+    VectorObservationSize: 49
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -4490,7 +4490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
+    VectorObservationSize: 49
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -4784,7 +4784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
+    VectorObservationSize: 49
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -5261,7 +5261,7 @@ MonoBehaviour:
   soloCatchReward: 1
   teamCatchReward: 1
   catchRadius: 6.5
-  smellingEnable: 0
+  smellingEnable: 1
   smellingDecayRate: 0.95
   smellingRadius: 3
   smellingCellSize: 1
@@ -5469,7 +5469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
+    VectorObservationSize: 49
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -5931,7 +5931,7 @@ MonoBehaviour:
   soloCatchReward: 1
   teamCatchReward: 1
   catchRadius: 6.5
-  smellingEnable: 0
+  smellingEnable: 1
   smellingDecayRate: 0.95
   smellingRadius: 3
   smellingCellSize: 1
@@ -6385,7 +6385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
+    VectorObservationSize: 49
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2

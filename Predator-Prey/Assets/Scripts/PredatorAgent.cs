@@ -20,6 +20,20 @@ public class PredatorAgent : Agent {
         transform.Rotate(0f, rotateY, 0f);
     }
 
+    public override void CollectObservations(VectorSensor sensor) {
+        if (!environmentController.smellingEnable) return;
+
+        SmellMap smellMap = environmentController.smellMap;
+        float smellingRadius = environmentController.smellingRadius;
+
+        List<float> smellValues = smellMap.GetSmellRadius(transform.position, smellingRadius);
+        Debug.Log($"Number of smell values: {smellValues.Count} | {this.name}");
+
+        for (int i = 0; i < smellValues.Count; i++) {
+            sensor.AddObservation(smellValues[i]);
+        }
+    }
+
     public override void Heuristic(in ActionBuffers actionsOut) {
         ActionSegment<float> continuousActions = actionsOut.ContinuousActions;
         continuousActions[0] = Input.GetAxisRaw("Vertical");

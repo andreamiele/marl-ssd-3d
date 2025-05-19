@@ -14,8 +14,14 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/train.unity
     guid: a3848ac8e3afe4e24bc32c882eeee6c5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/train.unity
     guid: a3848ac8e3afe4e24bc32c882eeee6c5
+  - enabled: 0
+    path: Assets/Scenes/inference.unity
+    guid: 8111adf65e023450b8168ad38d0c60cb
+  - enabled: 1
+    path: Assets/Scenes/train_memory.unity
+    guid: 61d3152ab6d5241b4b004e8421783152
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
