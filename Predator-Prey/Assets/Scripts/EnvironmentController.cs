@@ -29,7 +29,7 @@ public class EnvironmentController : MonoBehaviour {
 
     public float predatorTranslationSpeed = 5f;
     public float predatorRotationSpeed    = 2f;
-    public float preyTranslationSpeed     = 2.5f;
+    public float preyTranslationSpeed     = 3.5f;
     public float preyRotationSpeed        = 1.5f;
     public bool placeRandomly = false;
     public float rnd_x_width = 2.5f;
@@ -60,6 +60,9 @@ public class EnvironmentController : MonoBehaviour {
     public float soloCatchReward = 1f;
     public float teamCatchReward = 1.5f;
     public float catchRadius     = 15f;
+
+    private float interPredatorDistanceSum = 0f;
+    private int interPredatorProximityCount = 0;
 
     private int totalCaptures = 0;
     private int loneWolfCaptures = 0;
@@ -116,6 +119,21 @@ public class EnvironmentController : MonoBehaviour {
             if (item.agent.transform.position.y < -10)
                 item.agent.transform.position = item.startingPosition;
 
+        Agent predator1 = null;
+        Agent predator2 = null;
+        foreach (var item in agentsList) {
+            if (item.agent.CompareTag("Predator")){
+                if (predator1 == null) predator1 = item.agent;
+                else predator2 = item.agent;
+            }
+        }
+
+        if (predator1 != null && predator2 != null) {
+            float dist = Vector3.Distance(predator1.transform.position, predator2.transform.position);
+            interPredatorDistanceSum += dist;
+            if (dist <= catchRadius) interPredatorProximityCount++;
+        }
+
         resetTimer += 1;
         if (resetTimer >= maxEnvironmentSteps && maxEnvironmentSteps > 0) {
             if (inferenceEnable) {
@@ -128,12 +146,17 @@ public class EnvironmentController : MonoBehaviour {
                     }
                 }
 
+                float avgPredatorDistance = interPredatorDistanceSum / resetTimer;
+                float predatorProximityRate = (float)interPredatorProximityCount / resetTimer;
+
                 using (StreamWriter writer = new StreamWriter(inferenceLogPath, true)) {
                     float score = 2 - (float)((1 * loneWolfCaptures) + (2 * (totalCaptures - loneWolfCaptures))) / (float)totalCaptures;
                     string line = $"[Episode {inferenceEpisode}] [Timeout] " +
                         $"total_captures = {totalCaptures}, " +
                         $"lone_wolf_captures = {loneWolfCaptures}, " +
                         $"prey_survived_step = {prey_survived_step}, " + 
+                        $"avg_predator_distance = {avgPredatorDistance}, " +
+                        $"predator_proximity_rate = {predatorProximityRate}, " +
                         $"score = {score}";
                     writer.WriteLine(line);
                     Debug.Log(line);
@@ -217,6 +240,9 @@ public class EnvironmentController : MonoBehaviour {
                     }
                 }
 
+                float avgPredatorDistance = interPredatorDistanceSum / resetTimer;
+                float predatorProximityRate = (float)interPredatorProximityCount / resetTimer;
+
                 using (StreamWriter writer = new StreamWriter(inferenceLogPath, true)) {
                     float score = 2 - (float)((1 * loneWolfCaptures) + (2 * (totalCaptures - loneWolfCaptures))) / (float)totalCaptures;
                    string line = $"[Episode {inferenceEpisode}] [Timeout] " +
@@ -224,6 +250,8 @@ public class EnvironmentController : MonoBehaviour {
                         $"lone_wolf_captures = {loneWolfCaptures}, " +
                         $"prey_survived_step = {prey_survived_step}, " + 
                         $"predator_distance = {interPredatorDistance}, " +
+                        $"avg_predator_distance = {avgPredatorDistance}, " +
+                        $"predator_proximity_rate = {predatorProximityRate}, " +
                         $"score = {score}";
                     writer.WriteLine(line);
                     Debug.Log(line);
@@ -291,5 +319,8 @@ public class EnvironmentController : MonoBehaviour {
 
         killedPreys = new List<Agent>();
         killedPreysCount = 0;
+
+        interPredatorDistanceSum = 0f;
+        interPredatorProximityCount = 0;
     }
 }

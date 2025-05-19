@@ -742,13 +742,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315101307}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2788677, y: 0.116196916, z: -0.06011913, w: 0.95137626}
-  m_LocalPosition: {x: -0.38, y: 2.56, z: -2.45}
+  m_LocalRotation: {x: 0.21558984, y: -0.002717137, z: -0.019883601, w: 0.9762778}
+  m_LocalPosition: {x: 0, y: 3.2, z: -2.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 839407449}
-  m_LocalEulerAnglesHint: {x: 32.997, y: 12.923, z: -3.389}
+  m_LocalEulerAnglesHint: {x: 24.888, y: -0.877, z: -2.527}
 --- !u!81 &315101309
 AudioListener:
   m_ObjectHideFlags: 0
@@ -799,7 +799,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 7
+  m_TargetDisplay: 2
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -1009,7 +1009,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 927a4906c80ef443c91d586424b86e30, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour2
@@ -1429,7 +1429,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: f971f888a96324a239c6cd9af2c25ede, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour1
@@ -1611,13 +1611,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037173727}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2788677, y: 0.116196916, z: -0.06011913, w: 0.95137626}
-  m_LocalPosition: {x: -0.38, y: 2.56, z: -2.45}
+  m_LocalRotation: {x: 0.120006815, y: -0.20286082, z: -0.037796948, w: 0.9710908}
+  m_LocalPosition: {x: 0.6, y: 2.9, z: -3.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 321286779}
-  m_LocalEulerAnglesHint: {x: 32.997, y: 12.923, z: -3.389}
+  m_LocalEulerAnglesHint: {x: 12.576, y: -24.392, z: -7.186}
 --- !u!81 &1037173729
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1668,7 +1668,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 7
+  m_TargetDisplay: 3
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -1708,14 +1708,14 @@ MonoBehaviour:
   agentRadius: 0.5
   predatorTranslationSpeed: 5
   predatorRotationSpeed: 2
-  preyTranslationSpeed: 4
+  preyTranslationSpeed: 3.5
   preyRotationSpeed: 1.5
   placeRandomly: 1
   rnd_x_width: 2.5
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  inferenceEnable: 0
+  inferenceEnable: 1
   inferenceName: Predator-Prey
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
@@ -1736,8 +1736,8 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
   maxEnvironmentSteps: 10000
   soloCatchReward: 1
-  teamCatchReward: 1
-  catchRadius: 6.5
+  teamCatchReward: 1.7
+  catchRadius: 10
 --- !u!4 &1475268032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9198904475115645518, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -1837,6 +1837,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d5d7e5a04bbfd294ab3b2555c37c336f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 493144911}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d5d7e5a04bbfd294ab3b2555c37c336f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1695231510}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d5d7e5a04bbfd294ab3b2555c37c336f, type: 3}
       insertIndex: -1
@@ -1999,6 +2002,89 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1695231509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1695231510}
+  - component: {fileID: 1695231511}
+  m_Layer: 6
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1695231510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695231509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.19556668, y: -0, z: 0.00000002235174, w: 0.9806904}
+  m_LocalPosition: {x: -0.0000005298191, y: 8.1, z: -4.9999943}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1659405169}
+  m_LocalEulerAnglesHint: {x: 22.556, y: 0, z: 0}
+--- !u!20 &1695231511
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695231509}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 1
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &2036678268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +2159,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1

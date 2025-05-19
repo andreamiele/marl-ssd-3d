@@ -36,10 +36,13 @@ public class PreyAgent : Agent {
             Vector3 incoming = transform.forward;
             Vector3 bounceDirection = Vector3.Reflect(incoming, contactNormal).normalized;
 
-            Quaternion targetRotation = Quaternion.LookRotation(bounceDirection, Vector3.up);
-            transform.rotation = targetRotation;
+            Vector3 flatDirection = new Vector3(bounceDirection.x, 0f, bounceDirection.z).normalized;
+            if (flatDirection != Vector3.zero) {
+                Quaternion flatRotation = Quaternion.LookRotation(flatDirection, Vector3.up);
+                transform.rotation = flatRotation;
+            }
 
-            transform.position += bounceDirection;
+            transform.position += flatDirection / 2f;
         }
     }
 }
