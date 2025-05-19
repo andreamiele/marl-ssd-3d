@@ -13,7 +13,7 @@ public class PredatorAgent : Agent {
     }
 
     public override void OnActionReceived(ActionBuffers actions) {
-        float speedForward = environmentController.predatorTranslationSpeed * Mathf.Clamp(actions.ContinuousActions[0], 0f, 1f);
+        float speedForward = environmentController.predatorTranslationSpeed * Mathf.Clamp(actions.ContinuousActions[0], -1f, 1f);
         float rotateY = environmentController.predatorRotationSpeed * Mathf.Clamp(actions.ContinuousActions[1], -1f, 1f);
 
         transform.position += transform.forward * speedForward * Time.deltaTime;
