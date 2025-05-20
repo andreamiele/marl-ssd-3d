@@ -171,7 +171,7 @@ MonoBehaviour:
   m_ObservationType: 0
   m_RuntimeCameraEnable: 0
   m_ObservationStacks: 50
-  m_Compression: 1
+  m_Compression: 0
 --- !u!1 &86831519
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +198,7 @@ Transform:
   m_GameObject: {fileID: 86831519}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_ObservationType: 0
   m_RuntimeCameraEnable: 0
   m_ObservationStacks: 50
-  m_Compression: 1
+  m_Compression: 0
 --- !u!1 &134532997
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +251,7 @@ Transform:
   m_GameObject: {fileID: 134532997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_ObservationType: 0
   m_RuntimeCameraEnable: 0
   m_ObservationStacks: 50
-  m_Compression: 1
+  m_Compression: 0
 --- !u!1001 &136839335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1522,6 +1522,12 @@ MonoBehaviour:
   soloCatchReward: 1
   teamCatchReward: 1
   catchRadius: 6.5
+  smellingEnable: 0
+  smellingDecayRate: 0.95
+  smellingRadius: 3
+  smellingCellSize: 1
+  smellingIntensityPredator: 1
+  smellingIntensityPrey: 1
 --- !u!4 &211685016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 378380595461242520, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -2154,7 +2160,7 @@ Transform:
   m_GameObject: {fileID: 503281855}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2180,7 +2186,7 @@ MonoBehaviour:
   m_ObservationType: 0
   m_RuntimeCameraEnable: 0
   m_ObservationStacks: 50
-  m_Compression: 1
+  m_Compression: 0
 --- !u!1001 &556833775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2541,6 +2547,12 @@ MonoBehaviour:
   soloCatchReward: 1
   teamCatchReward: 1
   catchRadius: 6.5
+  smellingEnable: 0
+  smellingDecayRate: 0.95
+  smellingRadius: 3
+  smellingCellSize: 1
+  smellingIntensityPredator: 1
+  smellingIntensityPrey: 1
 --- !u!1001 &590661693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3542,13 +3554,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889586594}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2788677, y: 0.116196916, z: -0.06011913, w: 0.95137626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1606268153}
-  m_LocalEulerAnglesHint: {x: 32.997, y: 12.923, z: -3.389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &889586596
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3726,7 +3738,7 @@ Transform:
   m_GameObject: {fileID: 961474191}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3752,7 +3764,7 @@ MonoBehaviour:
   m_ObservationType: 0
   m_RuntimeCameraEnable: 0
   m_ObservationStacks: 50
-  m_Compression: 1
+  m_Compression: 0
 --- !u!1 &1037173727
 GameObject:
   m_ObjectHideFlags: 0
@@ -3954,13 +3966,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118342283}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2788677, y: 0.116196916, z: -0.06011913, w: 0.95137626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1365260812}
-  m_LocalEulerAnglesHint: {x: 32.997, y: 12.923, z: -3.389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &1118342285
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4637,13 +4649,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259476596}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2788677, y: 0.116196916, z: -0.06011913, w: 0.95137626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1674070271}
-  m_LocalEulerAnglesHint: {x: 32.997, y: 12.923, z: -3.389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &1259476598
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4729,7 +4741,7 @@ Transform:
   m_GameObject: {fileID: 1302775833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4755,7 +4767,7 @@ MonoBehaviour:
   m_ObservationType: 0
   m_RuntimeCameraEnable: 0
   m_ObservationStacks: 50
-  m_Compression: 1
+  m_Compression: 0
 --- !u!1001 &1317057093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6560,7 +6572,7 @@ Transform:
   m_GameObject: {fileID: 1430530817}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6586,7 +6598,7 @@ MonoBehaviour:
   m_ObservationType: 0
   m_RuntimeCameraEnable: 0
   m_ObservationStacks: 50
-  m_Compression: 1
+  m_Compression: 0
 --- !u!1 &1475268030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3552009245790336636, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -6643,6 +6655,12 @@ MonoBehaviour:
   soloCatchReward: 1
   teamCatchReward: 1
   catchRadius: 6.5
+  smellingEnable: 0
+  smellingDecayRate: 0.95
+  smellingRadius: 3
+  smellingCellSize: 1
+  smellingIntensityPredator: 1
+  smellingIntensityPrey: 1
 --- !u!4 &1475268032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9198904475115645518, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -7459,6 +7477,12 @@ MonoBehaviour:
   soloCatchReward: 1
   teamCatchReward: 1
   catchRadius: 6.5
+  smellingEnable: 0
+  smellingDecayRate: 0.95
+  smellingRadius: 3
+  smellingCellSize: 1
+  smellingIntensityPredator: 1
+  smellingIntensityPrey: 1
 --- !u!1001 &1659405168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8371,7 +8395,7 @@ Transform:
   m_GameObject: {fileID: 1676692229}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8397,7 +8421,7 @@ MonoBehaviour:
   m_ObservationType: 0
   m_RuntimeCameraEnable: 0
   m_ObservationStacks: 50
-  m_Compression: 1
+  m_Compression: 0
 --- !u!1 &1708205495
 GameObject:
   m_ObjectHideFlags: 0
@@ -8424,13 +8448,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708205495}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2788677, y: 0.116196916, z: -0.06011913, w: 0.95137626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.3, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 590661694}
-  m_LocalEulerAnglesHint: {x: 32.997, y: 12.923, z: -3.389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &1708205497
 AudioListener:
   m_ObjectHideFlags: 0

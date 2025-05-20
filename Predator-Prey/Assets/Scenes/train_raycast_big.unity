@@ -1625,8 +1625,8 @@ MonoBehaviour:
   - Prey
   - Predator
   - Obstacle
-  m_RaysPerDirection: 5
-  m_MaxRayDegrees: 35
+  m_RaysPerDirection: 20
+  m_MaxRayDegrees: 140
   m_SphereCastRadius: 0.5
   m_RayLength: 20
   m_RayLayerMask:
@@ -2494,8 +2494,8 @@ MonoBehaviour:
   - Prey
   - Predator
   - Obstacle
-  m_RaysPerDirection: 5
-  m_MaxRayDegrees: 35
+  m_RaysPerDirection: 20
+  m_MaxRayDegrees: 140
   m_SphereCastRadius: 0.5
   m_RayLength: 20
   m_RayLayerMask:
@@ -2557,8 +2557,8 @@ MonoBehaviour:
   - Prey
   - Predator
   - Obstacle
-  m_RaysPerDirection: 5
-  m_MaxRayDegrees: 35
+  m_RaysPerDirection: 20
+  m_MaxRayDegrees: 140
   m_SphereCastRadius: 0.5
   m_RayLength: 20
   m_RayLayerMask:
@@ -3098,8 +3098,8 @@ MonoBehaviour:
   - Prey
   - Predator
   - Obstacle
-  m_RaysPerDirection: 5
-  m_MaxRayDegrees: 35
+  m_RaysPerDirection: 20
+  m_MaxRayDegrees: 140
   m_SphereCastRadius: 0.5
   m_RayLength: 20
   m_RayLayerMask:
@@ -3161,8 +3161,8 @@ MonoBehaviour:
   - Prey
   - Predator
   - Obstacle
-  m_RaysPerDirection: 5
-  m_MaxRayDegrees: 35
+  m_RaysPerDirection: 20
+  m_MaxRayDegrees: 140
   m_SphereCastRadius: 0.5
   m_RayLength: 20
   m_RayLayerMask:
@@ -3491,8 +3491,8 @@ MonoBehaviour:
   - Prey
   - Predator
   - Obstacle
-  m_RaysPerDirection: 5
-  m_MaxRayDegrees: 35
+  m_RaysPerDirection: 20
+  m_MaxRayDegrees: 140
   m_SphereCastRadius: 0.5
   m_RayLength: 20
   m_RayLayerMask:
@@ -4935,8 +4935,8 @@ MonoBehaviour:
   - Prey
   - Predator
   - Obstacle
-  m_RaysPerDirection: 5
-  m_MaxRayDegrees: 35
+  m_RaysPerDirection: 20
+  m_MaxRayDegrees: 140
   m_SphereCastRadius: 0.5
   m_RayLength: 20
   m_RayLayerMask:
@@ -6803,8 +6803,8 @@ MonoBehaviour:
   - Prey
   - Predator
   - Obstacle
-  m_RaysPerDirection: 5
-  m_MaxRayDegrees: 35
+  m_RaysPerDirection: 20
+  m_MaxRayDegrees: 140
   m_SphereCastRadius: 0.5
   m_RayLength: 20
   m_RayLayerMask:
