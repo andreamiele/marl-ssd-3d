@@ -90,7 +90,7 @@ env_settings:
   base_port: 5005
   num_envs: 2
   num_areas: 1
-  seed: -1
+  seed: 503
   max_lifetime_restarts: 10
   restarts_rate_limit_n: 1
   restarts_rate_limit_period_s: 60
@@ -106,7 +106,7 @@ environment_parameters:
   catch_radius:
     sampler_type: constant
     sampler_parameters:
-      value: 10.0
+      value: 9.0
   solo_catch_reward:
     sampler_type: constant
     sampler_parameters:
@@ -114,7 +114,7 @@ environment_parameters:
   team_catch_reward:
     sampler_type: constant
     sampler_parameters:
-      value: 1.7
+      value: 2.0
 checkpoint_settings:
   run_id: ppo
   initialize_from: null

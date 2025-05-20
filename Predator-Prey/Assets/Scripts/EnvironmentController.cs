@@ -79,9 +79,9 @@ public class EnvironmentController : MonoBehaviour {
         Random.InitState(503);
         if (!inferenceEnable)
         {
-            soloCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("solo_catch_reward", 1f);
-            teamCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("team_catch_reward", 1.5f);
-            catchRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 15f);
+            soloCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("solo_catch_reward", 1.0f);
+            teamCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("team_catch_reward", 2.0f);
+            catchRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 9.0f);
 
             smellingEnable = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_enable", 0f) == 1f;
             smellingDecayRate = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_decay_rate", 0.95f);
