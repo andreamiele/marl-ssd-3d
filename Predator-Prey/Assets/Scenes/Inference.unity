@@ -1001,7 +1001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BrainParameters:
     VectorObservationSize: 0
-    NumStackedVectorObservations: 50
+    NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 2
       BranchSizes: 
@@ -1009,9 +1009,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 927a4906c80ef443c91d586424b86e30, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 1690796bed630482ab67ac16b45054ab, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour2
   TeamId: 0
   m_UseChildSensors: 1
@@ -1421,7 +1421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BrainParameters:
     VectorObservationSize: 0
-    NumStackedVectorObservations: 50
+    NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 2
       BranchSizes: 
@@ -1429,9 +1429,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: f971f888a96324a239c6cd9af2c25ede, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 8e532325ef93842cbbc8d9979ac36dcf, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour1
   TeamId: 0
   m_UseChildSensors: 1
@@ -1716,10 +1716,10 @@ MonoBehaviour:
   rotMin: 0
   rotMax: 360
   inferenceEnable: 1
-  inferenceName: Predator-Prey
+  inferenceName: sequence_length_32_memory_size_128
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
-  inferenceMaxEpisode: 1000
+  inferenceMaxEpisode: 250
   obstacleCollisionPenalty: -0.2
   agentsList:
   - agent: {fileID: 1659405171}
@@ -1736,8 +1736,14 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
   maxEnvironmentSteps: 10000
   soloCatchReward: 1
-  teamCatchReward: 1.7
-  catchRadius: 10
+  teamCatchReward: 2
+  catchRadius: 9
+  smellingEnable: 0
+  smellingDecayRate: 0.95
+  smellingRadius: 3
+  smellingCellSize: 1
+  smellingIntensityPredator: 1
+  smellingIntensityPrey: 1
 --- !u!4 &1475268032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9198904475115645518, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}

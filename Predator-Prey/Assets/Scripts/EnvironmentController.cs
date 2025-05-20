@@ -184,7 +184,7 @@ public class EnvironmentController : MonoBehaviour {
 
                 using (StreamWriter writer = new StreamWriter(inferenceLogPath, true)) {
                     float score = 2 - (float)((1 * loneWolfCaptures) + (2 * (totalCaptures - loneWolfCaptures))) / (float)totalCaptures;
-                    string line = $"[Episode {inferenceEpisode}] [Timeout] " +
+                    string line = $"[Episode {inferenceEpisode}] [timeout] " +
                         $"total_captures = {totalCaptures}, " +
                         $"lone_wolf_captures = {loneWolfCaptures}, " +
                         $"prey_survived_step = {prey_survived_step}, " + 
@@ -278,7 +278,7 @@ public class EnvironmentController : MonoBehaviour {
 
                 using (StreamWriter writer = new StreamWriter(inferenceLogPath, true)) {
                     float score = 2 - (float)((1 * loneWolfCaptures) + (2 * (totalCaptures - loneWolfCaptures))) / (float)totalCaptures;
-                   string line = $"[Episode {inferenceEpisode}] [Timeout] " +
+                   string line = $"[Episode {inferenceEpisode}] [capture] " +
                         $"total_captures = {totalCaptures}, " +
                         $"lone_wolf_captures = {loneWolfCaptures}, " +
                         $"prey_survived_step = {prey_survived_step}, " + 
