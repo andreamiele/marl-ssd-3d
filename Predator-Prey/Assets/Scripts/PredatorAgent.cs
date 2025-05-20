@@ -27,7 +27,6 @@ public class PredatorAgent : Agent {
         float smellingRadius = environmentController.smellingRadius;
 
         List<float> smellValues = smellMap.GetSmellRadius(transform.position, smellingRadius);
-        Debug.Log($"Number of smell values: {smellValues.Count} | {this.name}");
 
         for (int i = 0; i < smellValues.Count; i++) {
             sensor.AddObservation(smellValues[i]);
