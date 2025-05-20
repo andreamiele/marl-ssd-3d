@@ -84,9 +84,11 @@ public class EnvironmentController : MonoBehaviour {
             catchRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 9.0f);
 
             smellingEnable = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_enable", 0f) == 1f;
-            smellingDecayRate = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_decay_rate", 0.95f);
+            smellingDecayRate = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_decay_rate", 0.90f);
             smellingRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_radius", 3.0f);
             smellingCellSize = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_cell_size", 1.0f);
+            smellingIntensityPredator = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_intensity_predator", 1.0f);
+            smellingIntensityPrey = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_intensity_prey", 1.0f);
         }
         Debug.Log("[EnvironmentController] soloCatchReward = " + soloCatchReward);
         Debug.Log("[EnvironmentController] teamCatchReward = " + teamCatchReward);
