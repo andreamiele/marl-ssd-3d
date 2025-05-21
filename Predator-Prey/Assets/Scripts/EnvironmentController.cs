@@ -61,13 +61,8 @@ public class EnvironmentController : MonoBehaviour {
     public float teamCatchReward = 1.5f;
     public float catchRadius     = 15f;
 
-    public bool smellingEnable     = false;
-    public float smellingDecayRate = 0.95f;
-    public float smellingRadius    = 3.0f;  // 3m radius around agent = (2 * 3 + 1) * (2 * 3 + 1) = 49 cells
-    public float smellingCellSize  = 1.0f;  // 1m x 1m cells
-    public float smellingIntensityPredator = 1f;
-    public float smellingIntensityPrey     = 1f;
-    public SmellMap smellMap;
+    public bool smellingEnable  = false;
+    public float smellingRadius = 9.0f;
 
     private float interPredatorDistanceSum = 0f;
     private int interPredatorProximityCount = 0;
@@ -84,29 +79,16 @@ public class EnvironmentController : MonoBehaviour {
             catchRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 9.0f);
 
             smellingEnable = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_enable", 0f) == 1f;
-            smellingDecayRate = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_decay_rate", 0.90f);
             smellingRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_radius", 3.0f);
-            smellingCellSize = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_cell_size", 1.0f);
-            smellingIntensityPredator = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_intensity_predator", 1.0f);
-            smellingIntensityPrey = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_intensity_prey", 1.0f);
         }
         Debug.Log("[EnvironmentController] soloCatchReward = " + soloCatchReward);
         Debug.Log("[EnvironmentController] teamCatchReward = " + teamCatchReward);
         Debug.Log("[EnvironmentController] catchRadius = " + catchRadius);
         Debug.Log("[EnvironmentController] smellingEnable = " + smellingEnable);
-        Debug.Log("[EnvironmentController] smellingDecayRate = " + smellingDecayRate);
         Debug.Log("[EnvironmentController] smellingRadius = " + smellingRadius);
-        Debug.Log("[EnvironmentController] smellingCellSize = " + smellingCellSize);
-        Debug.Log("[EnvironmentController] smellingIntensityPredator = " + smellingIntensityPredator);
-        Debug.Log("[EnvironmentController] smellingIntensityPrey = " + smellingIntensityPrey);   
 
         spawnArea = spawnAreaObject.GetComponent<Collider>();
 
-        if (smellingEnable) {
-            smellMap = new SmellMap(spawnArea.bounds, smellingCellSize, smellingDecayRate);
-            Debug.Log("[EnvironmentController] SmellMap initialized.");
-        }
-        
         foreach (var item in agentsList) {
             item.startingPosition = item.agent.transform.position;
             item.startingRotation = item.agent.transform.rotation;
@@ -133,17 +115,11 @@ public class EnvironmentController : MonoBehaviour {
         foreach (var item in agentsList) {
             if (item.agent.CompareTag("Predator")) {
                 item.agent.AddReward(-1f / maxEnvironmentSteps);
-                if(smellingEnable) {
-                    smellMap.AddSmell(item.agent.transform.position, smellingIntensityPredator);
-                }
             } else if (item.agent.CompareTag("Prey")) {
                 item.agent.AddReward(1f / maxEnvironmentSteps);
                 if (inferenceEnable) {
                     var preyAgent = (PreyAgent)item.agent;
                     preyAgent.survivedSteps += 1;
-                }
-                if(smellingEnable) {
-                    smellMap.AddSmell(item.agent.transform.position, smellingIntensityPrey);
                 }
             }
         }

@@ -21,15 +21,30 @@ public class PredatorAgent : Agent {
     }
 
     public override void CollectObservations(VectorSensor sensor) {
+        sensor.AddObservation(environmentController.resetTimer / environmentController.maxEnvironmentSteps);
+        
         if (!environmentController.smellingEnable) return;
 
-        SmellMap smellMap = environmentController.smellMap;
-        float smellingRadius = environmentController.smellingRadius;
+        foreach (var item in environmentController.agentsList) {
+            if (item.agent.CompareTag("Prey")) {
+                float distance = Vector3.Distance(item.agent.transform.position, transform.position);
+                Vector3 preyDirection;
+                if (distance < environmentController.smellingRadius)
+                    preyDirection = (item.agent.transform.position - transform.position).normalized;
+                else
+                    preyDirection = Vector3.zero;
+                sensor.AddObservation(preyDirection);
+            }
 
-        List<float> smellValues = smellMap.GetSmellRadius(transform.position, smellingRadius);
-
-        for (int i = 0; i < smellValues.Count; i++) {
-            sensor.AddObservation(smellValues[i]);
+            if (item.agent.CompareTag("Predator") && item.agent != this) {
+                float distance = Vector3.Distance(item.agent.transform.position, transform.position);
+                Vector3 predatorDirection;
+                if (distance < environmentController.smellingRadius)
+                    predatorDirection = (item.agent.transform.position - transform.position).normalized;
+                else
+                    predatorDirection = Vector3.zero;
+                sensor.AddObservation(predatorDirection);
+            }
         }
     }
 
