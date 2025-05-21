@@ -545,6 +545,30 @@ PrefabInstance:
       propertyPath: 'm_DetectableTags.Array.data[2]'
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 726162856071437039, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 726162856071437039, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 726162856071437039, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 820218057025982836, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 820218057025982836, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 820218057025982836, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1128452997735756819, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_DetectableTags.Array.size
       value: 3
@@ -601,6 +625,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -10.1
       objectReference: {fileID: 0}
+    - target: {fileID: 2469496093933965993, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469496093933965993, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469496093933965993, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068061655275657750, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068061655275657750, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068061655275657750, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3354828128837824476, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_BehaviorType
       value: 1
@@ -644,6 +692,22 @@ PrefabInstance:
     - target: {fileID: 3601092041381317503, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: 'm_DetectableTags.Array.data[2]'
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618269858004552304, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.293256
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618269858004552304, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.413525
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618269858004552304, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.8176
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618269858004552304, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.0023
       objectReference: {fileID: 0}
     - target: {fileID: 3659011217991065647, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -809,6 +873,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5558087342428373900, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558087342428373900, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558087342428373900, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5595806295582869605, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_DetectableTags.Array.size
       value: 3
@@ -824,6 +900,18 @@ PrefabInstance:
     - target: {fileID: 5595806295582869605, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: 'm_DetectableTags.Array.data[2]'
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770265075624432779, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770265075624432779, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770265075624432779, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5791052147342199129, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_Name
@@ -856,6 +944,30 @@ PrefabInstance:
     - target: {fileID: 5908993411608479393, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569544394687439202, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569544394687439202, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569544394687439202, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251295486892443831, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251295486892443831, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251295486892443831, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7364387507851064358, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
       propertyPath: m_Avatar
@@ -1049,6 +1161,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 9199098957013539323, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199098957013539323, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199098957013539323, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
@@ -1175,16 +1299,13 @@ MonoBehaviour:
     startingPosition: {x: 0, y: 0, z: 0}
     startingRotation: {x: 0, y: 0, z: 0, w: 0}
     rigidBody: {fileID: 0}
-  maxEnvironmentSteps: 10000
-  soloCatchReward: 1
-  teamCatchReward: 1
-  catchRadius: 6.5
+  maxEnvironmentSteps: 5000
+  resetTimer: 0
+  soloCatchReward: 10
+  teamCatchReward: 10
+  catchRadius: 9
   smellingEnable: 1
-  smellingDecayRate: 0.95
-  smellingRadius: 3
-  smellingCellSize: 1
-  smellingIntensityPredator: 1
-  smellingIntensityPrey: 1
+  smellingRadius: 15
 --- !u!4 &211685016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 378380595461242520, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -1460,7 +1581,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 5000
 --- !u!114 &321286783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1474,7 +1595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 49
+    VectorObservationSize: 3
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -1526,8 +1647,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 4.39}
-  m_Center: {x: 0, y: 1.1, z: -0.26}
+  m_Size: {x: 1.35, y: 1.98, z: 4.39}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &321286786
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1547,8 +1668,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 0.6}
-  m_Center: {x: 0, y: 1.1, z: 1.3}
+  m_Size: {x: 1.37, y: 2, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!54 &321286787
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1628,7 +1749,7 @@ MonoBehaviour:
   m_RaysPerDirection: 10
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 12
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -1710,6 +1831,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 211685010}
     m_Modifications:
+    - target: {fileID: 40365768510367057, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 40365768510367057, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 40365768510367057, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 842388779230187704, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 842388779230187704, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 842388779230187704, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 862772054770699626, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_Name
       value: Prey
@@ -1742,6 +1887,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1623151151546124223, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1623151151546124223, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1623151151546124223, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2486203071487946276, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_BehaviorName
       value: PredatorBehaviour1
@@ -1749,6 +1906,18 @@ PrefabInstance:
     - target: {fileID: 2486203071487946276, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597765962070547912, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597765962070547912, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597765962070547912, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2597960450668850813, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1866,6 +2035,18 @@ PrefabInstance:
       propertyPath: 'm_DetectableTags.Array.data[2]'
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 4541065974525955204, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541065974525955204, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541065974525955204, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4950716484450311593, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.89
@@ -1897,6 +2078,30 @@ PrefabInstance:
     - target: {fileID: 5764513811241666323, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_Name
       value: Predator_2_RockyC
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820095855197197639, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820095855197197639, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820095855197197639, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5888180428491005660, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5888180428491005660, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5888180428491005660, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6056725394267451424, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_DetectableTags.Array.size
@@ -1958,6 +2163,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Predator_1_RockyC
       objectReference: {fileID: 0}
+    - target: {fileID: 8158038125777935909, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158038125777935909, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158038125777935909, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8442670173470092271, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_BehaviorType
       value: 1
@@ -1965,6 +2182,18 @@ PrefabInstance:
     - target: {fileID: 8442670173470092271, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782498932057151130, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782498932057151130, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782498932057151130, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8942289746673789795, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
@@ -2058,16 +2287,13 @@ MonoBehaviour:
     startingPosition: {x: 0, y: 0, z: 0}
     startingRotation: {x: 0, y: 0, z: 0, w: 0}
     rigidBody: {fileID: 0}
-  maxEnvironmentSteps: 10000
-  soloCatchReward: 1
-  teamCatchReward: 1
-  catchRadius: 6.5
+  maxEnvironmentSteps: 5000
+  resetTimer: 0
+  soloCatchReward: 10
+  teamCatchReward: 10
+  catchRadius: 9
   smellingEnable: 1
-  smellingDecayRate: 0.95
-  smellingRadius: 3
-  smellingCellSize: 1
-  smellingIntensityPredator: 1
-  smellingIntensityPrey: 1
+  smellingRadius: 15
 --- !u!1001 &590661693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2246,7 +2472,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 5000
 --- !u!114 &590661698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2260,7 +2486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 49
+    VectorObservationSize: 3
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -2312,8 +2538,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 4.39}
-  m_Center: {x: 0, y: 1.1, z: -0.26}
+  m_Size: {x: 1.35, y: 1.98, z: 4.39}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &590661701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2333,8 +2559,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 0.6}
-  m_Center: {x: 0, y: 1.1, z: 1.3}
+  m_Size: {x: 1.37, y: 2, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!54 &590661702
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2497,7 +2723,7 @@ MonoBehaviour:
   m_RaysPerDirection: 10
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 12
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -2560,7 +2786,7 @@ MonoBehaviour:
   m_RaysPerDirection: 10
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 12
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -2749,7 +2975,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 5000
 --- !u!114 &839407453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2763,7 +2989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 49
+    VectorObservationSize: 3
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -2815,8 +3041,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 4.39}
-  m_Center: {x: 0, y: 1.1, z: -0.26}
+  m_Size: {x: 1.35, y: 1.98, z: 4.39}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &839407456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2836,8 +3062,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 0.6}
-  m_Center: {x: 0, y: 1.1, z: 1.3}
+  m_Size: {x: 1.37, y: 2, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!54 &839407457
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3101,7 +3327,7 @@ MonoBehaviour:
   m_RaysPerDirection: 10
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 12
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -3164,7 +3390,7 @@ MonoBehaviour:
   m_RaysPerDirection: 10
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 12
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -3494,7 +3720,7 @@ MonoBehaviour:
   m_RaysPerDirection: 10
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 12
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -4182,7 +4408,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 5000
 --- !u!114 &1317057098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4196,7 +4422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 49
+    VectorObservationSize: 3
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -4248,8 +4474,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 4.39}
-  m_Center: {x: 0, y: 1.1, z: -0.26}
+  m_Size: {x: 1.35, y: 1.98, z: 4.39}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &1317057101
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4269,8 +4495,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 0.6}
-  m_Center: {x: 0, y: 1.1, z: 1.3}
+  m_Size: {x: 1.37, y: 2, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!54 &1317057102
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4476,7 +4702,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 5000
 --- !u!114 &1317560655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4490,7 +4716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 49
+    VectorObservationSize: 3
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -4542,8 +4768,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 4.39}
-  m_Center: {x: 0, y: 1.1, z: -0.26}
+  m_Size: {x: 1.35, y: 1.98, z: 4.39}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &1317560658
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4563,8 +4789,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 0.6}
-  m_Center: {x: 0, y: 1.1, z: 1.3}
+  m_Size: {x: 1.37, y: 2, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!54 &1317560659
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4770,7 +4996,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 5000
 --- !u!114 &1365260816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4784,7 +5010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 49
+    VectorObservationSize: 3
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -4836,8 +5062,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 4.39}
-  m_Center: {x: 0, y: 1.1, z: -0.26}
+  m_Size: {x: 1.35, y: 1.98, z: 4.39}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &1365260819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4857,8 +5083,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 0.6}
-  m_Center: {x: 0, y: 1.1, z: 1.3}
+  m_Size: {x: 1.37, y: 2, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!54 &1365260820
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4938,7 +5164,7 @@ MonoBehaviour:
   m_RaysPerDirection: 10
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 12
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -5257,16 +5483,13 @@ MonoBehaviour:
     startingPosition: {x: 0, y: 0, z: 0}
     startingRotation: {x: 0, y: 0, z: 0, w: 0}
     rigidBody: {fileID: 0}
-  maxEnvironmentSteps: 10000
-  soloCatchReward: 1
-  teamCatchReward: 1
-  catchRadius: 6.5
+  maxEnvironmentSteps: 5000
+  resetTimer: 0
+  soloCatchReward: 10
+  teamCatchReward: 10
+  catchRadius: 9
   smellingEnable: 1
-  smellingDecayRate: 0.95
-  smellingRadius: 3
-  smellingCellSize: 1
-  smellingIntensityPredator: 1
-  smellingIntensityPrey: 1
+  smellingRadius: 15
 --- !u!4 &1475268032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9198904475115645518, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
@@ -5455,7 +5678,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 5000
 --- !u!114 &1606268157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5469,7 +5692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 49
+    VectorObservationSize: 3
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -5521,8 +5744,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 4.39}
-  m_Center: {x: 0, y: 1.1, z: -0.26}
+  m_Size: {x: 1.35, y: 1.98, z: 4.39}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &1606268160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5542,8 +5765,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 0.6}
-  m_Center: {x: 0, y: 1.1, z: 1.3}
+  m_Size: {x: 1.37, y: 2, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!54 &1606268161
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5579,6 +5802,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 211685010}
     m_Modifications:
+    - target: {fileID: 40365768510367057, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 40365768510367057, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 40365768510367057, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 842388779230187704, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 842388779230187704, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 842388779230187704, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 862772054770699626, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_Name
       value: Prey
@@ -5611,6 +5858,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1623151151546124223, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1623151151546124223, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1623151151546124223, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2486203071487946276, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_BehaviorName
       value: PredatorBehaviour1
@@ -5618,6 +5877,18 @@ PrefabInstance:
     - target: {fileID: 2486203071487946276, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597765962070547912, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597765962070547912, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597765962070547912, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2597960450668850813, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5735,6 +6006,18 @@ PrefabInstance:
       propertyPath: 'm_DetectableTags.Array.data[2]'
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 4541065974525955204, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541065974525955204, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541065974525955204, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4950716484450311593, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.89
@@ -5766,6 +6049,30 @@ PrefabInstance:
     - target: {fileID: 5764513811241666323, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_Name
       value: Predator_2_RockyB
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820095855197197639, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820095855197197639, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820095855197197639, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5888180428491005660, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5888180428491005660, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5888180428491005660, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6056725394267451424, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_DetectableTags.Array.size
@@ -5827,6 +6134,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Predator_1_RockyB
       objectReference: {fileID: 0}
+    - target: {fileID: 8158038125777935909, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158038125777935909, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158038125777935909, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8442670173470092271, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_BehaviorType
       value: 1
@@ -5834,6 +6153,18 @@ PrefabInstance:
     - target: {fileID: 8442670173470092271, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782498932057151130, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782498932057151130, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782498932057151130, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8942289746673789795, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
@@ -5927,16 +6258,13 @@ MonoBehaviour:
     startingPosition: {x: 0, y: 0, z: 0}
     startingRotation: {x: 0, y: 0, z: 0, w: 0}
     rigidBody: {fileID: 0}
-  maxEnvironmentSteps: 10000
-  soloCatchReward: 1
-  teamCatchReward: 1
-  catchRadius: 6.5
+  maxEnvironmentSteps: 5000
+  resetTimer: 0
+  soloCatchReward: 10
+  teamCatchReward: 10
+  catchRadius: 9
   smellingEnable: 1
-  smellingDecayRate: 0.95
-  smellingRadius: 3
-  smellingCellSize: 1
-  smellingIntensityPredator: 1
-  smellingIntensityPrey: 1
+  smellingRadius: 15
 --- !u!1001 &1659405168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6371,7 +6699,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 5000
 --- !u!114 &1674070275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6385,7 +6713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 49
+    VectorObservationSize: 3
     NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -6437,8 +6765,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 4.39}
-  m_Center: {x: 0, y: 1.1, z: -0.26}
+  m_Size: {x: 1.35, y: 1.98, z: 4.39}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &1674070278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6458,8 +6786,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 0.6}
-  m_Center: {x: 0, y: 1.1, z: 1.3}
+  m_Size: {x: 1.37, y: 2, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!54 &1674070279
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6806,7 +7134,7 @@ MonoBehaviour:
   m_RaysPerDirection: 10
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 12
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
