@@ -1109,7 +1109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BrainParameters:
     VectorObservationSize: 1
-    NumStackedVectorObservations: 1
+    NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
       BranchSizes: 
@@ -1117,7 +1117,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 7784e6732d6fa43698e80ac500d79b4a, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: d2858670fd437419da8a6432335f6987, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour2
@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_RaysPerDirection: 10
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 12
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -1529,7 +1529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BrainParameters:
     VectorObservationSize: 1
-    NumStackedVectorObservations: 1
+    NumStackedVectorObservations: 50
     m_ActionSpec:
       m_NumContinuousActions: 2
       BranchSizes: 
@@ -1537,7 +1537,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: a210f7737aa3c460988fffb127b0df02, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 8184e341b3414490e82be11e33415d50, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour1
@@ -1682,7 +1682,7 @@ MonoBehaviour:
   m_RaysPerDirection: 10
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 12
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -1824,7 +1824,7 @@ MonoBehaviour:
   rotMin: 0
   rotMax: 360
   inferenceEnable: 1
-  inferenceName: c9_r2
+  inferenceName: c9_r10
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
   inferenceMaxEpisode: 250
@@ -1848,7 +1848,7 @@ MonoBehaviour:
   teamCatchReward: 20
   catchRadius: 9
   smellingEnable: 0
-  smellingRadius: 3
+  smellingRadius: 12
 --- !u!4 &1475268032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9198904475115645518, guid: 1059aa795c5fb437080eff83bdf1a59f, type: 3}
