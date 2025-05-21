@@ -44,7 +44,7 @@ public class EnvironmentController : MonoBehaviour {
     public int inferenceEpisode = 0;
     public int inferenceMaxEpisode = 1000;
 
-    public float obstacleCollisionPenalty = -0.2f;
+    public float obstacleCollisionPenalty = -0.5f;
 
     public List<AgentInfo> agentsList = new List<AgentInfo>();
 
@@ -54,8 +54,8 @@ public class EnvironmentController : MonoBehaviour {
     private List<Agent> killedPreys = new List<Agent>();
     private int killedPreysCount = 0;
 
-    public int maxEnvironmentSteps = 25000;
-    private int resetTimer = 0;
+    public int maxEnvironmentSteps = 5000;
+    public int resetTimer = 0;
 
     public float soloCatchReward = 1f;
     public float teamCatchReward = 1.5f;
@@ -114,9 +114,9 @@ public class EnvironmentController : MonoBehaviour {
     void FixedUpdate() {
         foreach (var item in agentsList) {
             if (item.agent.CompareTag("Predator")) {
-                item.agent.AddReward(-1f / maxEnvironmentSteps);
+                item.agent.AddReward(-0.02f);
             } else if (item.agent.CompareTag("Prey")) {
-                item.agent.AddReward(1f / maxEnvironmentSteps);
+                item.agent.AddReward(0.02f);
                 if (inferenceEnable) {
                     var preyAgent = (PreyAgent)item.agent;
                     preyAgent.survivedSteps += 1;
@@ -182,8 +182,11 @@ public class EnvironmentController : MonoBehaviour {
                 }
             }
 
-            foreach (var item in agentsList) 
+            foreach (var item in agentsList) {
+                if (item.agent.CompareTag("Predator"))
+                    item.agent.AddReward(-10.0f);
                 item.agent.EndEpisode();
+            }
             ResetScene();
         }
     }

@@ -5,26 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/PreyBoth.unity
-    guid: 4c2e343ef043041c68d0baadefde8e91
-  - enabled: 0
-    path: Assets/Scenes/PositionalObs-19-05-2023 1.unity
-    guid: 59811e4f4221b45c2a21267a6ab343c9
-  - enabled: 0
-    path: Assets/Scenes/train.unity
-    guid: a3848ac8e3afe4e24bc32c882eeee6c5
-  - enabled: 0
-    path: Assets/Scenes/train.unity
-    guid: a3848ac8e3afe4e24bc32c882eeee6c5
   - enabled: 1
-    path: Assets/Scenes/inference.unity
-    guid: 8111adf65e023450b8168ad38d0c60cb
-  - enabled: 0
-    path: Assets/Scenes/train_memory.unity
-    guid: 61d3152ab6d5241b4b004e8421783152
-  - enabled: 0
-    path: Assets/Scenes/train_smelling.unity
-    guid: 47b1fb0ee8528436fa4f90c048d2ae20
+    path: Assets/Scenes/train.unity
+    guid: a3848ac8e3afe4e24bc32c882eeee6c5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
