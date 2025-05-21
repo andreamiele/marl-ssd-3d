@@ -1094,7 +1094,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 5000
 --- !u!114 &321286783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,7 +1117,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 4380404eff5044b6b9ef889a7de9d4bc, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 7784e6732d6fa43698e80ac500d79b4a, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour2
@@ -1160,8 +1160,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 4.39}
-  m_Center: {x: 0, y: 1.1, z: -0.26}
+  m_Size: {x: 1.35, y: 1.98, z: 4.39}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &321286786
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1181,8 +1181,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 0.6}
-  m_Center: {x: 0, y: 1.1, z: 1.3}
+  m_Size: {x: 1.37, y: 2, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!54 &321286787
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1537,7 +1537,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 10f96eb4eaebe47c9931a32a970b10fc, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: a210f7737aa3c460988fffb127b0df02, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour1
@@ -1580,8 +1580,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 4.39}
-  m_Center: {x: 0, y: 1.1, z: -0.26}
+  m_Size: {x: 1.35, y: 1.98, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &839407456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1601,8 +1601,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.35, y: 2.3, z: 0.6}
-  m_Center: {x: 0, y: 1.1, z: 1.3}
+  m_Size: {x: 1.37, y: 2, z: 4.41}
+  m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!54 &839407457
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1824,7 +1824,7 @@ MonoBehaviour:
   rotMin: 0
   rotMax: 360
   inferenceEnable: 1
-  inferenceName: c9_r5
+  inferenceName: c9_r2
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
   inferenceMaxEpisode: 250
@@ -1845,7 +1845,7 @@ MonoBehaviour:
   maxEnvironmentSteps: 5000
   resetTimer: 0
   soloCatchReward: 10
-  teamCatchReward: 10
+  teamCatchReward: 20
   catchRadius: 9
   smellingEnable: 0
   smellingRadius: 3
