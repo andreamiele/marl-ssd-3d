@@ -58,7 +58,11 @@ public class PredatorAgent : Agent {
         if (other.gameObject.CompareTag("Prey")) {
             Agent preyAgent = other.gameObject.GetComponent<Agent>();
             environmentController.PredatorPreyCollision(this, preyAgent);
-        } else if (other.gameObject.CompareTag("Obstacle")) {
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.CompareTag("Obstacle")) {
             environmentController.predatorObstacleCollision(this);
         }
     }
