@@ -194,11 +194,18 @@ public class EnvironmentController : MonoBehaviour {
     public void predatorObstacleCollision(PredatorAgent predator) {
         predator.AddReward(obstacleCollisionPenalty);
     }
+    
+    public void preyObstacleCollision(PreyAgent prey) {
+        prey.AddReward(obstacleCollisionPenalty);
+    }
 
-    public void PredatorPreyCollision(PredatorAgent catcherPredator, Agent caughtPrey) {
+    public void PredatorPreyCollision(PredatorAgent catcherPredator, Agent caughtPrey)
+    {
         int participants = 0;
-        foreach (var item in agentsList) {
-            if (item.agent.CompareTag("Predator") && item.agent.gameObject.activeSelf) {
+        foreach (var item in agentsList)
+        {
+            if (item.agent.CompareTag("Predator") && item.agent.gameObject.activeSelf)
+            {
                 float distance = Vector3.Distance(
                     item.agent.transform.position,
                     caughtPrey.transform.position
@@ -213,14 +220,17 @@ public class EnvironmentController : MonoBehaviour {
             $"lone_wolf_rate/{gameObject.name}",
             participants == 1 ? 1f : 0f,          // 1 = solo, 0 = team
             StatAggregationMethod.Average);       // ML‑Agents averages inside each
-                                                // summary window (e.g. 1000 steps)
+                                                  // summary window (e.g. 1000 steps)
 
         float preyReward = 0f;
-        if (participants == 1) {
+        if (participants == 1)
+        {
             loneWolfCaptures += 1;
             catcherPredator.AddReward(soloCatchReward);
             preyReward = -soloCatchReward;
-        } else {
+        }
+        else
+        {
             foreach (var item in agentsList)
                 if (item.agent.CompareTag("Predator") &&
                     Vector3.Distance(
@@ -234,17 +244,22 @@ public class EnvironmentController : MonoBehaviour {
         caughtPrey.AddReward(preyReward);
         KillAgent(caughtPrey);
 
-        if (killedPreysCount == preysCount) {
-            if (inferenceEnable) {
+        if (killedPreysCount == preysCount)
+        {
+            if (inferenceEnable)
+            {
                 int prey_survived_step = 0;
                 float interPredatorDistance = -1f;
-                foreach (var item in agentsList) {
-                    if (item.agent.CompareTag("Prey")) {   
+                foreach (var item in agentsList)
+                {
+                    if (item.agent.CompareTag("Prey"))
+                    {
                         var preyAgent = (PreyAgent)item.agent;
                         prey_survived_step = preyAgent.survivedSteps;
                         preyAgent.survivedSteps = 0;
                     }
-                    else if (item.agent.CompareTag("Predator") && item.agent != catcherPredator) {
+                    else if (item.agent.CompareTag("Predator") && item.agent != catcherPredator)
+                    {
                         interPredatorDistance = Vector3.Distance(
                             catcherPredator.transform.position,
                             item.agent.transform.position
@@ -255,28 +270,30 @@ public class EnvironmentController : MonoBehaviour {
                 float avgPredatorDistance = interPredatorDistanceSum / resetTimer;
                 float predatorProximityRate = (float)interPredatorProximityCount / resetTimer;
 
-                using (StreamWriter writer = new StreamWriter(inferenceLogPath, true)) {
+                using (StreamWriter writer = new StreamWriter(inferenceLogPath, true))
+                {
                     float score = 2 - (float)((1 * loneWolfCaptures) + (2 * (totalCaptures - loneWolfCaptures))) / (float)totalCaptures;
-                   string line = $"[Episode {inferenceEpisode}] [capture] " +
-                        $"total_captures = {totalCaptures}, " +
-                        $"lone_wolf_captures = {loneWolfCaptures}, " +
-                        $"prey_survived_step = {prey_survived_step}, " + 
-                        $"predator_distance = {interPredatorDistance}, " +
-                        $"avg_predator_distance = {avgPredatorDistance}, " +
-                        $"predator_proximity_rate = {predatorProximityRate}, " +
-                        $"score = {score}";
+                    string line = $"[Episode {inferenceEpisode}] [capture] " +
+                         $"total_captures = {totalCaptures}, " +
+                         $"lone_wolf_captures = {loneWolfCaptures}, " +
+                         $"prey_survived_step = {prey_survived_step}, " +
+                         $"predator_distance = {interPredatorDistance}, " +
+                         $"avg_predator_distance = {avgPredatorDistance}, " +
+                         $"predator_proximity_rate = {predatorProximityRate}, " +
+                         $"score = {score}";
                     writer.WriteLine(line);
                     Debug.Log(line);
                 }
 
                 inferenceEpisode += 1;
-                if (inferenceEpisode >= inferenceMaxEpisode) {
+                if (inferenceEpisode >= inferenceMaxEpisode)
+                {
                     Debug.Log("[EnvironmentController] Inference finished.");
-                    #if UNITY_EDITOR
-                        EditorApplication.isPlaying = false;
-                    #else
+#if UNITY_EDITOR
+                    EditorApplication.isPlaying = false;
+#else
                         Application.Quit();
-                    #endif
+#endif
                 }
             }
 

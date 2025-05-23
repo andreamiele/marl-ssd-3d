@@ -9,6 +9,8 @@ using Unity.MLAgents.Sensors;
 public class PreyAgent : Agent {
     private string currentState;
     internal int survivedSteps = 0;
+
+    public bool selfplay = false;
     private EnvironmentController environmentController;
 
     public void Start() {
@@ -30,19 +32,32 @@ public class PreyAgent : Agent {
     }
 
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.CompareTag("Obstacle")) {
-            Vector3 contactNormal = collision.contacts[0].normal;
 
-            Vector3 incoming = transform.forward;
-            Vector3 bounceDirection = Vector3.Reflect(incoming, contactNormal).normalized;
-
-            Vector3 flatDirection = new Vector3(bounceDirection.x, 0f, bounceDirection.z).normalized;
-            if (flatDirection != Vector3.zero) {
-                Quaternion flatRotation = Quaternion.LookRotation(flatDirection, Vector3.up);
-                transform.rotation = flatRotation;
+        if (selfplay)
+        {
+            if (collision.gameObject.CompareTag("Obstacle"))
+            {
+                environmentController.preyObstacleCollision(this);
             }
+        }
+        else
+        {
+            if (collision.gameObject.CompareTag("Obstacle"))
+            {
+                Vector3 contactNormal = collision.contacts[0].normal;
 
-            transform.position += flatDirection / 2f;
+                Vector3 incoming = transform.forward;
+                Vector3 bounceDirection = Vector3.Reflect(incoming, contactNormal).normalized;
+
+                Vector3 flatDirection = new Vector3(bounceDirection.x, 0f, bounceDirection.z).normalized;
+                if (flatDirection != Vector3.zero)
+                {
+                    Quaternion flatRotation = Quaternion.LookRotation(flatDirection, Vector3.up);
+                    transform.rotation = flatRotation;
+                }
+
+                transform.position += flatDirection / 2f;
+            }
         }
     }
 }
