@@ -29,8 +29,8 @@ public class EnvironmentController : MonoBehaviour {
 
     public float predatorTranslationSpeed = 5f;
     public float predatorRotationSpeed    = 2f;
-    public float preyTranslationSpeed     = 3.5f;
-    public float preyRotationSpeed        = 1.5f;
+    public float preyTranslationSpeed     = 4f;
+    public float preyRotationSpeed        = 2f;
     public bool placeRandomly = false;
     public float rnd_x_width = 2.5f;
     public float rnd_z_width = 2.5f;
@@ -115,6 +115,10 @@ public class EnvironmentController : MonoBehaviour {
         foreach (var item in agentsList) {
             if (item.agent.CompareTag("Predator")) {
                 item.agent.AddReward(-0.02f);
+                // Vision reward: check if predator can see any prey
+                if (PredatorCanSeePrey(item.agent.transform)) {
+                    item.agent.AddReward(0.06f);
+                }
             } else if (item.agent.CompareTag("Prey")) {
                 item.agent.AddReward(0.02f);
                 if (inferenceEnable) {
@@ -351,5 +355,29 @@ public class EnvironmentController : MonoBehaviour {
 
         interPredatorDistanceSum = 0f;
         interPredatorProximityCount = 0;
+    }
+
+    // Helper: check if a predator can see any prey within 60 units and 250° FOV
+    private bool PredatorCanSeePrey(Transform predatorTransform) {
+        float rayLength = 60f;
+        float fov = 250f; // degrees
+        float halfFov = fov / 2f;
+        foreach (var item in agentsList) {
+            if (item.agent.CompareTag("Prey") && item.agent.gameObject.activeSelf) {
+                Vector3 dirToPrey = item.agent.transform.position - predatorTransform.position;
+                float distance = dirToPrey.magnitude;
+                if (distance > rayLength) continue;
+                float angle = Vector3.Angle(predatorTransform.forward, dirToPrey);
+                if (angle > halfFov) continue;
+                // Raycast to check for obstacles
+                Ray ray = new Ray(predatorTransform.position, dirToPrey.normalized);
+                if (Physics.Raycast(ray, out RaycastHit hit, rayLength, ~0)) {
+                    if (hit.collider.gameObject == item.agent.gameObject) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 }

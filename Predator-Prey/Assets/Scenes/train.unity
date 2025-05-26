@@ -3421,7 +3421,10 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  inferenceEnable: 1
+  viewDistance: 15
+  fieldOfViewAngle: 120
+  predatorSeePreyReward: -0.02
+  inferenceEnable: 0
   inferenceName: c9_r10
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
@@ -3440,7 +3443,7 @@ MonoBehaviour:
     startingPosition: {x: 0, y: 0, z: 0}
     startingRotation: {x: 0, y: 0, z: 0, w: 0}
     rigidBody: {fileID: 0}
-  maxEnvironmentSteps: 5000
+  maxEnvironmentSteps: 10000
   resetTimer: 0
   soloCatchReward: 10
   teamCatchReward: 20
@@ -4000,7 +4003,7 @@ MonoBehaviour:
   m_RaysPerDirection: 30
   m_MaxRayDegrees: 125
   m_SphereCastRadius: 0.5
-  m_RayLength: 80
+  m_RayLength: 60
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -5199,7 +5202,7 @@ MonoBehaviour:
   m_RaysPerDirection: 30
   m_MaxRayDegrees: 125
   m_SphereCastRadius: 0.5
-  m_RayLength: 80
+  m_RayLength: 60
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -5816,7 +5819,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 10000
 --- !u!114 &236553356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5841,7 +5844,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 14281dc4095eb4017a551bbd11673617, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour2
   TeamId: 0
   m_UseChildSensors: 1
@@ -8095,7 +8098,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 10000
 --- !u!114 &407702566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8120,7 +8123,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 09159575e796845189098962b883dab9, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour1
   TeamId: 0
   m_UseChildSensors: 1
@@ -8408,7 +8411,7 @@ MonoBehaviour:
   m_RaysPerDirection: 30
   m_MaxRayDegrees: 125
   m_SphereCastRadius: 0.5
-  m_RayLength: 80
+  m_RayLength: 60
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -9429,7 +9432,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 10000
 --- !u!114 &525579547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9454,7 +9457,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 14281dc4095eb4017a551bbd11673617, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour2
   TeamId: 0
   m_UseChildSensors: 1
@@ -10424,7 +10427,10 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  inferenceEnable: 1
+  viewDistance: 15
+  fieldOfViewAngle: 120
+  predatorSeePreyReward: -0.02
+  inferenceEnable: 0
   inferenceName: c9_r10
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
@@ -10443,7 +10449,7 @@ MonoBehaviour:
     startingPosition: {x: 0, y: 0, z: 0}
     startingRotation: {x: 0, y: 0, z: 0, w: 0}
     rigidBody: {fileID: 0}
-  maxEnvironmentSteps: 5000
+  maxEnvironmentSteps: 10000
   resetTimer: 0
   soloCatchReward: 10
   teamCatchReward: 20
@@ -11235,7 +11241,10 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  inferenceEnable: 1
+  viewDistance: 15
+  fieldOfViewAngle: 120
+  predatorSeePreyReward: -0.02
+  inferenceEnable: 0
   inferenceName: c9_r10
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
@@ -11254,7 +11263,7 @@ MonoBehaviour:
     startingPosition: {x: 0, y: 0, z: 0}
     startingRotation: {x: 0, y: 0, z: 0, w: 0}
     rigidBody: {fileID: 0}
-  maxEnvironmentSteps: 5000
+  maxEnvironmentSteps: 10000
   resetTimer: 0
   soloCatchReward: 10
   teamCatchReward: 20
@@ -11313,7 +11322,7 @@ MonoBehaviour:
   m_RaysPerDirection: 30
   m_MaxRayDegrees: 125
   m_SphereCastRadius: 0.5
-  m_RayLength: 80
+  m_RayLength: 60
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -12875,7 +12884,7 @@ MonoBehaviour:
   m_RaysPerDirection: 30
   m_MaxRayDegrees: 125
   m_SphereCastRadius: 0.5
-  m_RayLength: 80
+  m_RayLength: 60
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -14903,7 +14912,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 10000
 --- !u!114 &881064618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14928,7 +14937,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 14281dc4095eb4017a551bbd11673617, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour2
   TeamId: 0
   m_UseChildSensors: 1
@@ -16012,7 +16021,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 10000
 --- !u!114 &922310503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16037,7 +16046,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 09159575e796845189098962b883dab9, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour1
   TeamId: 0
   m_UseChildSensors: 1
@@ -20504,7 +20513,7 @@ MonoBehaviour:
   m_RaysPerDirection: 30
   m_MaxRayDegrees: 125
   m_SphereCastRadius: 0.5
-  m_RayLength: 80
+  m_RayLength: 60
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -22474,7 +22483,7 @@ MonoBehaviour:
   m_RaysPerDirection: 30
   m_MaxRayDegrees: 125
   m_SphereCastRadius: 0.5
-  m_RayLength: 80
+  m_RayLength: 60
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -26717,7 +26726,7 @@ MonoBehaviour:
   m_RaysPerDirection: 30
   m_MaxRayDegrees: 125
   m_SphereCastRadius: 0.5
-  m_RayLength: 80
+  m_RayLength: 60
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -27070,7 +27079,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 10000
 --- !u!114 &1718077959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27095,7 +27104,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 09159575e796845189098962b883dab9, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour1
   TeamId: 0
   m_UseChildSensors: 1
@@ -27725,7 +27734,10 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  inferenceEnable: 1
+  viewDistance: 15
+  fieldOfViewAngle: 120
+  predatorSeePreyReward: -0.02
+  inferenceEnable: 0
   inferenceName: c9_r10
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
@@ -27744,7 +27756,7 @@ MonoBehaviour:
     startingPosition: {x: 0, y: 0, z: 0}
     startingRotation: {x: 0, y: 0, z: 0, w: 0}
     rigidBody: {fileID: 0}
-  maxEnvironmentSteps: 5000
+  maxEnvironmentSteps: 10000
   resetTimer: 0
   soloCatchReward: 10
   teamCatchReward: 20
@@ -28011,7 +28023,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 10000
 --- !u!114 &1732108362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28036,7 +28048,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 09159575e796845189098962b883dab9, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour1
   TeamId: 0
   m_UseChildSensors: 1
@@ -30889,7 +30901,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 10000
 --- !u!114 &1963331993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30914,7 +30926,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 14281dc4095eb4017a551bbd11673617, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour2
   TeamId: 0
   m_UseChildSensors: 1
