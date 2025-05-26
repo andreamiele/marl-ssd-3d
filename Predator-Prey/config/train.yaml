@@ -3,8 +3,8 @@ behaviors:
   PredatorBehaviour1:
     trainer_type: ppo
     hyperparameters:
-      batch_size: 2048
-      buffer_size: 20480
+      batch_size: 8192
+      buffer_size: 81920
       learning_rate: 0.0003
       beta: 0.005
       epsilon: 0.2
@@ -35,8 +35,8 @@ behaviors:
           deterministic: false
     init_path: null
     keep_checkpoints: 5
-    checkpoint_interval: 500000
-    max_steps: 5000000
+    checkpoint_interval: 1000000
+    max_steps: 10000000
     time_horizon: 64
     summary_freq: 1000
     threaded: true
@@ -45,8 +45,8 @@ behaviors:
   PredatorBehaviour2:
     trainer_type: ppo
     hyperparameters:
-      batch_size: 2048
-      buffer_size: 20480
+      batch_size: 8192
+      buffer_size: 81920
       learning_rate: 0.0003
       beta: 0.005
       epsilon: 0.2
@@ -77,8 +77,8 @@ behaviors:
           deterministic: false
     init_path: null
     keep_checkpoints: 5
-    checkpoint_interval: 500000
-    max_steps: 5000000
+    checkpoint_interval: 1000000
+    max_steps: 10000000
     time_horizon: 64
     summary_freq: 1000
     threaded: true
@@ -88,7 +88,7 @@ env_settings:
   env_path: null
   env_args: null
   base_port: 5005
-  num_envs: 2
+  num_envs: 8
   num_areas: 1
   seed: 503
   max_lifetime_restarts: 10
