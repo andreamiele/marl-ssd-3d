@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/train.unity
+    path: Assets/Scenes/train_old.unity
     guid: a3848ac8e3afe4e24bc32c882eeee6c5
   - enabled: 0
     path: Assets/Scenes/train_smelling.unity
