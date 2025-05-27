@@ -106,7 +106,7 @@ environment_parameters:
   catch_radius:
     sampler_type: constant
     sampler_parameters:
-      value: 9.0
+      value: 12.0
   solo_catch_reward:
     sampler_type: constant
     sampler_parameters:
@@ -114,11 +114,11 @@ environment_parameters:
   team_catch_reward:
     sampler_type: constant
     sampler_parameters:
-      value: 2.0
+      value: 20.0
   vision_reward:
     sampler_type: constant
     sampler_parameters:
-      value: 0.02
+      value: 0.06
   smelling_enable:
     sampler_type: constant
     sampler_parameters:
@@ -130,15 +130,15 @@ environment_parameters:
   sensor_ray_length:
     sampler_type: constant
     sampler_parameters:
-      value: 10.0
+      value: 30.0
   sensor_half_fov:
     sampler_type: constant
     sampler_parameters:
-      value: 50.0
+      value: 125.0
   max_environment_steps:
     sampler_type: constant
     sampler_parameters:
-      value: 15000
+      value: 10000
 checkpoint_settings:
   run_id: ppo
   initialize_from: null
@@ -151,4 +151,3 @@ checkpoint_settings:
 torch_settings:
   device: null
 debug: false
-
