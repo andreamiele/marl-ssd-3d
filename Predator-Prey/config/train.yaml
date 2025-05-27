@@ -115,6 +115,30 @@ environment_parameters:
     sampler_type: constant
     sampler_parameters:
       value: 2.0
+  vision_reward:
+    sampler_type: constant
+    sampler_parameters:
+      value: 0.02
+  smelling_enable:
+    sampler_type: constant
+    sampler_parameters:
+      value: 0.0
+  smelling_radius:
+    sampler_type: constant
+    sampler_parameters:
+      value: 0.0
+  sensor_ray_length:
+    sampler_type: constant
+    sampler_parameters:
+      value: 10.0
+  sensor_half_fov:
+    sampler_type: constant
+    sampler_parameters:
+      value: 50.0
+  max_environment_steps:
+    sampler_type: constant
+    sampler_parameters:
+      value: 15000
 checkpoint_settings:
   run_id: ppo
   initialize_from: null

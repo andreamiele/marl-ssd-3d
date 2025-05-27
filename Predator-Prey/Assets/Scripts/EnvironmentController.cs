@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
+using Unity.MLAgents.Sensors;
 using System.IO;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -31,7 +32,7 @@ public class EnvironmentController : MonoBehaviour {
     public float predatorRotationSpeed    = 2f;
     public float preyTranslationSpeed     = 4f;
     public float preyRotationSpeed        = 2f;
-    public bool placeRandomly = false;
+    public bool placeRandomly = true;
     public float rnd_x_width = 2.5f;
     public float rnd_z_width = 2.5f;
     public float rotMin = 0f;
@@ -54,38 +55,67 @@ public class EnvironmentController : MonoBehaviour {
     private List<Agent> killedPreys = new List<Agent>();
     private int killedPreysCount = 0;
 
-    public int maxEnvironmentSteps = 5000;
+    public int maxEnvironmentSteps = 10000;
     public int resetTimer = 0;
 
+    // Rewards
     public float soloCatchReward = 1f;
     public float teamCatchReward = 1.5f;
     public float catchRadius     = 15f;
+    public float visionReward    = 0.06f;
+    public float timeReward      = 0.02f;
 
+    // Sensors
+    public float sensorRayLength  = 60.0f;
+    public float sensorHalfFOV    = 125.0f;
+    public int raysPerDirection   = 30;
+
+    // Smelling
     public bool smellingEnable  = false;
     public float smellingRadius = 9.0f;
 
+    // Metrics
     private float interPredatorDistanceSum = 0f;
     private int interPredatorProximityCount = 0;
-
     private int totalCaptures = 0;
     private int loneWolfCaptures = 0;
 
     void Start() {
         Random.InitState(503);
-        if (!inferenceEnable)
-        {
+        if (!inferenceEnable) {
             soloCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("solo_catch_reward", 1.0f);
             teamCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("team_catch_reward", 2.0f);
-            catchRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 9.0f);
+            catchRadius     = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 9.0f);
+            visionReward    = Academy.Instance.EnvironmentParameters.GetWithDefault("vision_reward", 0.06f);
 
-            smellingEnable = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_enable", 0f) == 1f;
-            smellingRadius = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_radius", 3.0f);
-        }
+            smellingEnable  = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_enable", 0f) == 1f;
+            smellingRadius  = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_radius", 3.0f);
+
+            sensorRayLength = Academy.Instance.EnvironmentParameters.GetWithDefault("sensor_ray_length", 60.0f);
+            sensorHalfFOV   = Academy.Instance.EnvironmentParameters.GetWithDefault("sensor_half_fov", 125.0f);
+
+            maxEnvironmentSteps = (int)Academy.Instance.EnvironmentParameters.GetWithDefault("max_environment_steps", 10000);
+
+            Debug.Log("[EnvironmentController] Updating sensor objects");
+            RayPerceptionSensorComponent3D[] sensors = GetComponentsInChildren<RayPerceptionSensorComponent3D>();
+            foreach (var sensor in sensors) {
+                sensor.RayLength         = sensorRayLength;
+                sensor.MaxRayDegrees     = sensorHalfFOV;
+                sensor.RaysPerDirection  = raysPerDirection;
+            }
+        } 
+
         Debug.Log("[EnvironmentController] soloCatchReward = " + soloCatchReward);
         Debug.Log("[EnvironmentController] teamCatchReward = " + teamCatchReward);
         Debug.Log("[EnvironmentController] catchRadius = " + catchRadius);
+        Debug.Log("[EnvironmentController] visionReward = " + visionReward);
         Debug.Log("[EnvironmentController] smellingEnable = " + smellingEnable);
         Debug.Log("[EnvironmentController] smellingRadius = " + smellingRadius);
+        Debug.Log("[EnvironmentController] sensorRayLength = " + sensorRayLength);
+        Debug.Log("[EnvironmentController] sensorHalfFOV = " + sensorHalfFOV);
+        Debug.Log("[EnvironmentController] raysPerDirection = " + raysPerDirection);
+        Debug.Log("[EnvironmentController] maxEnvironmentSteps = " + maxEnvironmentSteps);
+
 
         spawnArea = spawnAreaObject.GetComponent<Collider>();
 
@@ -114,13 +144,13 @@ public class EnvironmentController : MonoBehaviour {
     void FixedUpdate() {
         foreach (var item in agentsList) {
             if (item.agent.CompareTag("Predator")) {
-                item.agent.AddReward(-0.02f);
+                item.agent.AddReward(-timeReward);
                 // Vision reward: check if predator can see any prey
                 if (PredatorCanSeePrey(item.agent.transform)) {
-                    item.agent.AddReward(0.06f);
+                    item.agent.AddReward(visionReward);
                 }
             } else if (item.agent.CompareTag("Prey")) {
-                item.agent.AddReward(0.02f);
+                item.agent.AddReward(timeReward);
                 if (inferenceEnable) {
                     var preyAgent = (PreyAgent)item.agent;
                     preyAgent.survivedSteps += 1;

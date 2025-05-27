@@ -3421,9 +3421,6 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  viewDistance: 15
-  fieldOfViewAngle: 120
-  predatorSeePreyReward: -0.02
   inferenceEnable: 0
   inferenceName: c9_r10
   inferenceLogDir: inference_logs
@@ -3448,6 +3445,11 @@ MonoBehaviour:
   soloCatchReward: 10
   teamCatchReward: 20
   catchRadius: 9
+  visionReward: 0.06
+  timeReward: 0.02
+  sensorRayLength: 60
+  sensorHalfFOV: 125
+  raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
 --- !u!1001 &152310508
@@ -5833,7 +5835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 10
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -8112,7 +8114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 10
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -9446,7 +9448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 10
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -10427,9 +10429,6 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  viewDistance: 15
-  fieldOfViewAngle: 120
-  predatorSeePreyReward: -0.02
   inferenceEnable: 0
   inferenceName: c9_r10
   inferenceLogDir: inference_logs
@@ -10454,6 +10453,11 @@ MonoBehaviour:
   soloCatchReward: 10
   teamCatchReward: 20
   catchRadius: 9
+  visionReward: 0.06
+  timeReward: 0.02
+  sensorRayLength: 60
+  sensorHalfFOV: 125
+  raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
 --- !u!1001 &548928258
@@ -11241,9 +11245,6 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  viewDistance: 15
-  fieldOfViewAngle: 120
-  predatorSeePreyReward: -0.02
   inferenceEnable: 0
   inferenceName: c9_r10
   inferenceLogDir: inference_logs
@@ -11268,6 +11269,11 @@ MonoBehaviour:
   soloCatchReward: 10
   teamCatchReward: 20
   catchRadius: 9
+  visionReward: 0.06
+  timeReward: 0.02
+  sensorRayLength: 60
+  sensorHalfFOV: 125
+  raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
 --- !u!1 &572993857
@@ -14926,7 +14932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 10
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -16035,7 +16041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 10
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -27093,7 +27099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 10
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -27734,9 +27740,6 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  viewDistance: 15
-  fieldOfViewAngle: 120
-  predatorSeePreyReward: -0.02
   inferenceEnable: 0
   inferenceName: c9_r10
   inferenceLogDir: inference_logs
@@ -27761,6 +27764,11 @@ MonoBehaviour:
   soloCatchReward: 10
   teamCatchReward: 20
   catchRadius: 9
+  visionReward: 0.06
+  timeReward: 0.02
+  sensorRayLength: 60
+  sensorHalfFOV: 125
+  raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
 --- !u!1001 &1730020230
@@ -28037,7 +28045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 10
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -30915,7 +30923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 10
     m_ActionSpec:
       m_NumContinuousActions: 2
