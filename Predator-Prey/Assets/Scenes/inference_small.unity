@@ -2024,7 +2024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 3
+    VectorObservationSize: 1
     NumStackedVectorObservations: 10
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -2033,9 +2033,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 09159575e796845189098962b883dab9, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 722db40c2c1944ce19821de60a57d4d2, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
+  m_BehaviorType: 1
   m_BehaviorName: PredatorBehaviour1
   TeamId: 0
   m_UseChildSensors: 1
@@ -2076,7 +2076,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8, y: 2, z: 4}
+  m_Size: {x: 1.2, y: 2, z: 4}
   m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &407702569
 BoxCollider:
@@ -2098,7 +2098,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.2, y: 2, z: 2}
-  m_Center: {x: 0, y: 1, z: 0.8}
+  m_Center: {x: 0, y: 1, z: 1}
 --- !u!54 &407702570
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2176,9 +2176,9 @@ MonoBehaviour:
   - Predator
   - Obstacle
   m_RaysPerDirection: 30
-  m_MaxRayDegrees: 125
+  m_MaxRayDegrees: 45
   m_SphereCastRadius: 0.5
-  m_RayLength: 60
+  m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -2777,8 +2777,8 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  inferenceEnable: 0
-  inferenceName: c9_r10
+  inferenceEnable: 1
+  inferenceName: test_colliders
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
   inferenceMaxEpisode: 250
@@ -2798,13 +2798,13 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
   maxEnvironmentSteps: 10000
   resetTimer: 0
-  soloCatchReward: 10
+  soloCatchReward: 1
   teamCatchReward: 20
-  catchRadius: 9
+  catchRadius: 12
   visionReward: 0.06
   timeReward: 0.02
-  sensorRayLength: 60
-  sensorHalfFOV: 125
+  sensorRayLength: 20
+  sensorHalfFOV: 45
   raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
@@ -3203,7 +3203,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4, y: 3.95, z: 5}
+  m_Size: {x: 2, y: 3.95, z: 5.3}
   m_Center: {x: 0, y: 1.97, z: 0.34}
 --- !u!54 &856864343
 Rigidbody:
@@ -3424,7 +3424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 3
+    VectorObservationSize: 1
     NumStackedVectorObservations: 10
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -3433,9 +3433,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 14281dc4095eb4017a551bbd11673617, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
+  m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour2
   TeamId: 0
   m_UseChildSensors: 1
@@ -3476,7 +3476,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8, y: 2, z: 4}
+  m_Size: {x: 1.2, y: 2, z: 4}
   m_Center: {x: 0, y: 1, z: -0.3}
 --- !u!65 &881064621
 BoxCollider:
@@ -3498,7 +3498,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.2, y: 2, z: 2}
-  m_Center: {x: 0, y: 1, z: 0.8}
+  m_Center: {x: 0, y: 1, z: 1}
 --- !u!54 &881064622
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3697,7 +3697,7 @@ Transform:
   m_GameObject: {fileID: 968691957}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 50, y: 100, z: 48}
+  m_LocalPosition: {x: 50, y: 50, z: 48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4136,9 +4136,9 @@ MonoBehaviour:
   - Predator
   - Obstacle
   m_RaysPerDirection: 30
-  m_MaxRayDegrees: 125
+  m_MaxRayDegrees: 45
   m_SphereCastRadius: 0.5
-  m_RayLength: 60
+  m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
