@@ -88,7 +88,7 @@ env_settings:
   env_path: null
   env_args: null
   base_port: 5005
-  num_envs: 8
+  num_envs: 1
   num_areas: 1
   seed: 503
   max_lifetime_restarts: 10

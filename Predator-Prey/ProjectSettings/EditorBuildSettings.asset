@@ -11,8 +11,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/train_smelling.unity
     guid: 47b1fb0ee8528436fa4f90c048d2ae20
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/train_selfplay.unity
     guid: 38e9ab00b50e9425c9e95686c8c4560a
+  - enabled: 1
+    path: Assets/Scenes/train_small.unity
+    guid: 6ff1432fd441e42b5a5b20c63fc9df72
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
