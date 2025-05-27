@@ -71,3 +71,6 @@ Predator-Prey/Assets/Resources/
 
 **/.DS_Store
 to_scitas.sh
+
+# Painful file
+Assembly-CSharp.csproj
