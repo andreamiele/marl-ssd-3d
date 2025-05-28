@@ -60,13 +60,13 @@ public class EnvironmentController : MonoBehaviour {
 
     // Rewards
     public float soloCatchReward = 1f;
-    public float teamCatchReward = 1.5f;
-    public float catchRadius     = 15f;
+    public float teamCatchReward = 20f;
+    public float catchRadius     = 12f;
     public float visionReward    = 0.06f;
     public float timeReward      = 0.02f;
 
     // Sensors
-    public float sensorRayLength  = 60.0f;
+    public float sensorRayLength  = 30.0f;
     public float sensorHalfFOV    = 125.0f;
     public int raysPerDirection   = 30;
 
@@ -84,14 +84,14 @@ public class EnvironmentController : MonoBehaviour {
         Random.InitState(503);
         if (!inferenceEnable) {
             soloCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("solo_catch_reward", 1.0f);
-            teamCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("team_catch_reward", 2.0f);
-            catchRadius     = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 9.0f);
+            teamCatchReward = Academy.Instance.EnvironmentParameters.GetWithDefault("team_catch_reward", 20.0f);
+            catchRadius     = Academy.Instance.EnvironmentParameters.GetWithDefault("catch_radius", 12.0f);
             visionReward    = Academy.Instance.EnvironmentParameters.GetWithDefault("vision_reward", 0.06f);
 
             smellingEnable  = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_enable", 0f) == 1f;
             smellingRadius  = Academy.Instance.EnvironmentParameters.GetWithDefault("smelling_radius", 3.0f);
 
-            sensorRayLength = Academy.Instance.EnvironmentParameters.GetWithDefault("sensor_ray_length", 60.0f);
+            sensorRayLength = Academy.Instance.EnvironmentParameters.GetWithDefault("sensor_ray_length", 30.0f);
             sensorHalfFOV   = Academy.Instance.EnvironmentParameters.GetWithDefault("sensor_half_fov", 125.0f);
 
             maxEnvironmentSteps = (int)Academy.Instance.EnvironmentParameters.GetWithDefault("max_environment_steps", 10000);
