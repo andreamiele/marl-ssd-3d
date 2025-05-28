@@ -14,8 +14,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/train_selfplay.unity
     guid: 38e9ab00b50e9425c9e95686c8c4560a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/train_small.unity
     guid: 6ff1432fd441e42b5a5b20c63fc9df72
+  - enabled: 1
+    path: Assets/Scenes/train_small_moved_obstacles.unity
+    guid: 8b0ac8f4224b2463f9574c88612f5ffa
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

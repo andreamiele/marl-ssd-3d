@@ -1,8 +1,0 @@
-[Inference] sequence_length_32_memory_size_128
-[Episode 0] [timeout] total_captures = 0, lone_wolf_captures = 0, prey_survived_step = 10000, avg_predator_distance = 28.93992, predator_proximity_rate = 0, score = NaN
-[Episode 1] [timeout] total_captures = 0, lone_wolf_captures = 0, prey_survived_step = 1, avg_predator_distance = 28.93992, predator_proximity_rate = 0, score = NaN
-[Episode 2] [timeout] total_captures = 0, lone_wolf_captures = 0, prey_survived_step = 1, avg_predator_distance = 28.93992, predator_proximity_rate = 0, score = NaN
-[Episode 3] [timeout] total_captures = 0, lone_wolf_captures = 0, prey_survived_step = 10000, avg_predator_distance = 15.20152, predator_proximity_rate = 0, score = NaN
-[Episode 4] [timeout] total_captures = 0, lone_wolf_captures = 0, prey_survived_step = 10000, avg_predator_distance = 12.20891, predator_proximity_rate = 0, score = NaN
-[Episode 5] [timeout] total_captures = 0, lone_wolf_captures = 0, prey_survived_step = 10000, avg_predator_distance = 4.039412, predator_proximity_rate = 1, score = NaN
-[Episode 6] [timeout] total_captures = 0, lone_wolf_captures = 0, prey_survived_step = 10000, avg_predator_distance = 35.82124, predator_proximity_rate = 0, score = NaN

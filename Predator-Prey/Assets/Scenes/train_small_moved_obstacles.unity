@@ -674,7 +674,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour1
   TeamId: 0
   m_UseChildSensors: 1
@@ -1462,7 +1462,7 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  inferenceEnable: 1
+  inferenceEnable: 0
   inferenceName: rd_45_rl_20
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
@@ -1488,9 +1488,9 @@ MonoBehaviour:
   catchRadius: 12
   visionReward: 0.06
   timeReward: 0.02
-  sensorRayLength: 20
-  sensorHalfFOV: 45
-  raysPerDirection: 20
+  sensorRayLength: 30
+  sensorHalfFOV: 125
+  raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
 --- !u!1001 &88917982
@@ -4405,7 +4405,7 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  inferenceEnable: 1
+  inferenceEnable: 0
   inferenceName: rd_45_rl_20
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
@@ -4431,9 +4431,9 @@ MonoBehaviour:
   catchRadius: 12
   visionReward: 0.06
   timeReward: 0.02
-  sensorRayLength: 20
-  sensorHalfFOV: 45
-  raysPerDirection: 20
+  sensorRayLength: 30
+  sensorHalfFOV: 125
+  raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
 --- !u!1001 &271012112
@@ -5662,7 +5662,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour1
   TeamId: 0
   m_UseChildSensors: 1
@@ -7286,7 +7286,7 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  inferenceEnable: 1
+  inferenceEnable: 0
   inferenceName: rd_45_rl_20
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
@@ -7312,9 +7312,9 @@ MonoBehaviour:
   catchRadius: 12
   visionReward: 0.06
   timeReward: 0.02
-  sensorRayLength: 20
-  sensorHalfFOV: 45
-  raysPerDirection: 20
+  sensorRayLength: 30
+  sensorHalfFOV: 125
+  raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
 --- !u!1001 &579463534
@@ -8116,7 +8116,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour1
   TeamId: 0
   m_UseChildSensors: 1
@@ -9942,7 +9942,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour2
   TeamId: 0
   m_UseChildSensors: 1
@@ -12323,7 +12323,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour2
   TeamId: 0
   m_UseChildSensors: 1
@@ -13863,7 +13863,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour1
   TeamId: 0
   m_UseChildSensors: 1
@@ -15401,7 +15401,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour2
   TeamId: 0
   m_UseChildSensors: 1
@@ -16368,7 +16368,7 @@ MonoBehaviour:
   rnd_z_width: 2.5
   rotMin: 0
   rotMax: 360
-  inferenceEnable: 1
+  inferenceEnable: 0
   inferenceName: rd_45_rl_20
   inferenceLogDir: inference_logs
   inferenceEpisode: 0
@@ -16394,9 +16394,9 @@ MonoBehaviour:
   catchRadius: 12
   visionReward: 0.06
   timeReward: 0.02
-  sensorRayLength: 20
-  sensorHalfFOV: 45
-  raysPerDirection: 20
+  sensorRayLength: 30
+  sensorHalfFOV: 125
+  raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
 --- !u!1001 &1780665828
@@ -16602,7 +16602,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: PredatorBehaviour2
   TeamId: 0
   m_UseChildSensors: 1
