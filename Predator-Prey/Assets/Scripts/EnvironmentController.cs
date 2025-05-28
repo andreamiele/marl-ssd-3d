@@ -389,9 +389,8 @@ public class EnvironmentController : MonoBehaviour {
 
     // Helper: check if a predator can see any prey within 60 units and 250° FOV
     private bool PredatorCanSeePrey(Transform predatorTransform) {
-        float rayLength = 60f;
-        float fov = 250f; // degrees
-        float halfFov = fov / 2f;
+        float rayLength = sensorRayLength;
+        float halfFov = sensorHalfFOV;
         foreach (var item in agentsList) {
             if (item.agent.CompareTag("Prey") && item.agent.gameObject.activeSelf) {
                 Vector3 dirToPrey = item.agent.transform.position - predatorTransform.position;
