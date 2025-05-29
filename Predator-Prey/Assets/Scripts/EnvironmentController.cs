@@ -244,8 +244,8 @@ public class EnvironmentController : MonoBehaviour {
     public void PredatorPreyCollision(PredatorAgent catcherPredator, Agent caughtPrey) {
         int participants = 0;
 
-        float captureX = catcherPredator.transform.position.x;
-        float captureZ = catcherPredator.transform.position.z;
+        float captureX = caughtPrey.transform.position.x;
+        float captureZ = caughtPrey.transform.position.z;
 
         float catcherPredatorX = catcherPredator.transform.position.x;
         float catcherPredatorZ = catcherPredator.transform.position.z;
