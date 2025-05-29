@@ -1967,7 +1967,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: d2b28a0ed0c4b47868cb133864d4c430, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour1
@@ -2110,9 +2110,9 @@ MonoBehaviour:
   - Predator
   - Obstacle
   m_RaysPerDirection: 30
-  m_MaxRayDegrees: 45
+  m_MaxRayDegrees: 125
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 30
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -2423,7 +2423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2597960450668850813, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.7
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2597960450668850813, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2431,7 +2431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2597960450668850813, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2597960450668850813, guid: 85b23b9f17ccf4c858d1ae4a27566111, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2739,8 +2739,8 @@ MonoBehaviour:
   rotMin: 0
   rotMax: 360
   inferenceEnable: 1
-  inferenceName: rd_45_rl_20
-  inferenceLogDir: inference_logs
+  inferenceName: test
+  inferenceLogDir: inferences
   inferenceEpisode: 0
   inferenceMaxEpisode: 250
   obstacleCollisionPenalty: -0.5
@@ -2764,9 +2764,9 @@ MonoBehaviour:
   catchRadius: 12
   visionReward: 0.06
   timeReward: 0.02
-  sensorRayLength: 20
-  sensorHalfFOV: 45
-  raysPerDirection: 20
+  sensorRayLength: 30
+  sensorHalfFOV: 125
+  raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
 --- !u!1001 &603707992
@@ -3398,7 +3398,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 93a45738aa7364751a49fd5d095bcad7, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 17e8d7b539fd5446fb401e03e0e26067, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour2
@@ -4105,9 +4105,9 @@ MonoBehaviour:
   - Predator
   - Obstacle
   m_RaysPerDirection: 30
-  m_MaxRayDegrees: 45
+  m_MaxRayDegrees: 125
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 30
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291

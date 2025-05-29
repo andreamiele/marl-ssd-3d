@@ -194,13 +194,21 @@ public class EnvironmentController : MonoBehaviour {
 
                 using (StreamWriter writer = new StreamWriter(inferenceLogPath, true)) {
                     float score = 2 - (float)((1 * loneWolfCaptures) + (2 * (totalCaptures - loneWolfCaptures))) / (float)totalCaptures;
-                    string line = $"[Episode {inferenceEpisode}] [timeout] " +
-                        $"total_captures = {totalCaptures}, " +
-                        $"lone_wolf_captures = {loneWolfCaptures}, " +
-                        $"prey_survived_step = {prey_survived_step}, " + 
-                        $"avg_predator_distance = {avgPredatorDistance}, " +
-                        $"predator_proximity_rate = {predatorProximityRate}, " +
-                        $"score = {score}";
+                    string line = $"epsode={inferenceEpisode} " +
+                        $"capture=0 " +
+                        $"total_captures={totalCaptures} " +
+                        $"lone_wolf_captures={loneWolfCaptures} " +
+                        $"prey_survived_step={prey_survived_step} " +
+                        $"predator_distance=0 " +
+                        $"avg_predator_distance={avgPredatorDistance} " +
+                        $"predator_proximity_rate={predatorProximityRate} " +
+                        $"score={score} " + 
+                        $"capture_x=-1 " +
+                        $"capture_z=-1 " +
+                        $"catcher_predator_x=-1 " +
+                        $"catcher_predator_z=-1 " +
+                        $"other_predator_x=-1 " +
+                        $"other_predator_z=-1";
                     writer.WriteLine(line);
                     Debug.Log(line);
                 }
@@ -233,11 +241,26 @@ public class EnvironmentController : MonoBehaviour {
         prey.AddReward(obstacleCollisionPenalty);
     }
 
-    public void PredatorPreyCollision(PredatorAgent catcherPredator, Agent caughtPrey)
-    {
+    public void PredatorPreyCollision(PredatorAgent catcherPredator, Agent caughtPrey) {
         int participants = 0;
+
+        float captureX = catcherPredator.transform.position.x;
+        float captureZ = catcherPredator.transform.position.z;
+
+        float catcherPredatorX = catcherPredator.transform.position.x;
+        float catcherPredatorZ = catcherPredator.transform.position.z;
+
+        float otherPredatorX = -1f;
+        float otherPredatorZ = -1f;
+
         foreach (var item in agentsList)
-        {
+            if (item.agent.CompareTag("Predator") && item.agent != catcherPredator) {
+                otherPredatorX = item.agent.transform.position.x;
+                otherPredatorZ = item.agent.transform.position.z;
+                break;
+            }
+
+        foreach (var item in agentsList) {
             if (item.agent.CompareTag("Predator") && item.agent.gameObject.activeSelf)
             {
                 float distance = Vector3.Distance(
@@ -307,14 +330,21 @@ public class EnvironmentController : MonoBehaviour {
                 using (StreamWriter writer = new StreamWriter(inferenceLogPath, true))
                 {
                     float score = 2 - (float)((1 * loneWolfCaptures) + (2 * (totalCaptures - loneWolfCaptures))) / (float)totalCaptures;
-                    string line = $"[Episode {inferenceEpisode}] [capture] " +
-                         $"total_captures = {totalCaptures}, " +
-                         $"lone_wolf_captures = {loneWolfCaptures}, " +
-                         $"prey_survived_step = {prey_survived_step}, " +
-                         $"predator_distance = {interPredatorDistance}, " +
-                         $"avg_predator_distance = {avgPredatorDistance}, " +
-                         $"predator_proximity_rate = {predatorProximityRate}, " +
-                         $"score = {score}";
+                    string line = $"epsode={inferenceEpisode} " +
+                        $"capture=1 " +
+                        $"total_captures={totalCaptures} " +
+                        $"lone_wolf_captures={loneWolfCaptures} " +
+                        $"prey_survived_step={prey_survived_step} " +
+                        $"predator_distance={interPredatorDistance} " +
+                        $"avg_predator_distance={avgPredatorDistance} " +
+                        $"predator_proximity_rate={predatorProximityRate} " +
+                        $"score={score} " + 
+                        $"capture_x={captureX} " +
+                        $"capture_z={captureZ} " +
+                        $"catcher_predator_x={catcherPredatorX} " +
+                        $"catcher_predator_z={catcherPredatorZ} " +
+                        $"other_predator_x={otherPredatorX} " +
+                        $"other_predator_z={otherPredatorZ}";
                     writer.WriteLine(line);
                     Debug.Log(line);
                 }
