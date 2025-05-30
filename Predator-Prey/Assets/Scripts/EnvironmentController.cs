@@ -136,7 +136,7 @@ public class EnvironmentController : MonoBehaviour {
             using (var writer = File.CreateText(inferenceLogPath)) {
                 writer.WriteLine($"[Inference] {inferenceName}");
             }
-            Time.timeScale = 20f;
+            Time.timeScale = 10f;
         }
         ResetScene();
     }

@@ -16,7 +16,7 @@ public class PreyAgent : Agent {
     private List<Transform> predatorTransforms = new List<Transform>();
     private bool useHeuristic = false;
     private static int globalStepCount = 0;
-    public int HeuristicStepThreshold = 7_500_000; // Steps after which heuristic is used
+    public int HeuristicStepThreshold = 1_010_000; // Steps after which heuristic is used
 
     public void Start() {
         environmentController = GetComponentInParent<EnvironmentController>();
