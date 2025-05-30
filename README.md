@@ -53,3 +53,6 @@ The WolfpackUnity ML-Agents project examines how agents learn and adapt behavior
     python update_config.py config/base_config.yaml config/new_config.yaml --param param_1_name=param_1_value --param param_2_name=param_2_value
     ```
 - Experiment with different scenarios and observe cooperation or defection patterns between predator agents.
+
+### Example
+![Example](assets/chase_example.gif)
