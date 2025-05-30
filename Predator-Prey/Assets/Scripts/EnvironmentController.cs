@@ -136,7 +136,7 @@ public class EnvironmentController : MonoBehaviour {
             using (var writer = File.CreateText(inferenceLogPath)) {
                 writer.WriteLine($"[Inference] {inferenceName}");
             }
-            Time.timeScale = 10f;
+            Time.timeScale = 20f;
         }
         ResetScene();
     }
@@ -419,8 +419,9 @@ public class EnvironmentController : MonoBehaviour {
 
     // Helper: check if a predator can see any prey within 60 units and 250° FOV
     private bool PredatorCanSeePrey(Transform predatorTransform) {
-        float rayLength = sensorRayLength;
-        float halfFov = sensorHalfFOV;
+        float rayLength = 60f;
+        float fov = 250f; // degrees
+        float halfFov = fov / 2f;
         foreach (var item in agentsList) {
             if (item.agent.CompareTag("Prey") && item.agent.gameObject.activeSelf) {
                 Vector3 dirToPrey = item.agent.transform.position - predatorTransform.position;
