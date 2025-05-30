@@ -1,9 +1,0 @@
-[Inference] recordings_coord
-[Episode 0] [capture] total_captures = 1, lone_wolf_captures = 1, prey_survived_step = 1, predator_distance = 28.4092, avg_predator_distance = 28.31007, predator_proximity_rate = 0, score = 1
-[Episode 1] [capture] total_captures = 2, lone_wolf_captures = 2, prey_survived_step = 59, predator_distance = 43.26615, avg_predator_distance = 42.75892, predator_proximity_rate = 0, score = 1
-[Episode 2] [capture] total_captures = 3, lone_wolf_captures = 3, prey_survived_step = 1487, predator_distance = 36.28531, avg_predator_distance = 35.96368, predator_proximity_rate = 0, score = 1
-[Episode 3] [capture] total_captures = 4, lone_wolf_captures = 4, prey_survived_step = 3110, predator_distance = 21.50895, avg_predator_distance = 10.94821, predator_proximity_rate = 0.4302251, score = 1
-[Episode 4] [capture] total_captures = 5, lone_wolf_captures = 4, prey_survived_step = 537, predator_distance = 2.892003, avg_predator_distance = 7.639512, predator_proximity_rate = 0.5921788, score = 0.8
-[Episode 5] [capture] total_captures = 6, lone_wolf_captures = 5, prey_survived_step = 3949, predator_distance = 36.19515, avg_predator_distance = 24.85372, predator_proximity_rate = 0, score = 0.8333333
-[Episode 6] [capture] total_captures = 7, lone_wolf_captures = 6, prey_survived_step = 3811, predator_distance = 12.82375, avg_predator_distance = 16.48867, predator_proximity_rate = 0.2938861, score = 0.8571429
-[Episode 7] [capture] total_captures = 8, lone_wolf_captures = 6, prey_survived_step = 3247, predator_distance = 4.266471, avg_predator_distance = 14.37419, predator_proximity_rate = 0.1850939, score = 0.75
