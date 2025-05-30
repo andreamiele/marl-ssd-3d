@@ -1967,7 +1967,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: d2b28a0ed0c4b47868cb133864d4c430, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 88b06cba776624145b4cbbf869faa8d9, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour1
@@ -2110,9 +2110,9 @@ MonoBehaviour:
   - Predator
   - Obstacle
   m_RaysPerDirection: 30
-  m_MaxRayDegrees: 125
+  m_MaxRayDegrees: 45
   m_SphereCastRadius: 0.5
-  m_RayLength: 30
+  m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -2739,7 +2739,7 @@ MonoBehaviour:
   rotMin: 0
   rotMax: 360
   inferenceEnable: 1
-  inferenceName: test
+  inferenceName: rd_45_rl_20
   inferenceLogDir: inferences
   inferenceEpisode: 0
   inferenceMaxEpisode: 250
@@ -2764,8 +2764,8 @@ MonoBehaviour:
   catchRadius: 12
   visionReward: 0.06
   timeReward: 0.02
-  sensorRayLength: 30
-  sensorHalfFOV: 125
+  sensorRayLength: 20
+  sensorHalfFOV: 45
   raysPerDirection: 30
   smellingEnable: 0
   smellingRadius: 12
@@ -3103,6 +3103,7 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 10000
   selfplay: 0
+  HeuristicStepThreshold: 7500000
 --- !u!114 &856864340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3398,7 +3399,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 17e8d7b539fd5446fb401e03e0e26067, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 1149e4798c8e74b59aa6dbb154cc4130, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
   m_BehaviorName: PredatorBehaviour2
@@ -4105,9 +4106,9 @@ MonoBehaviour:
   - Predator
   - Obstacle
   m_RaysPerDirection: 30
-  m_MaxRayDegrees: 125
+  m_MaxRayDegrees: 45
   m_SphereCastRadius: 0.5
-  m_RayLength: 30
+  m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
