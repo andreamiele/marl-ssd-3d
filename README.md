@@ -1,4 +1,4 @@
-# marl-ssd-3d
+# Cooperation or Defection: Multi-Agent Learning in a 3D Continuous Social Sequential Dilemma Game
 
 This project explores cooperative and competitive behaviors between predator agents (wolves) chasing a prey agent (goat) within a realistic Unity environment featuring obstacles and raycast-based vision.
 
