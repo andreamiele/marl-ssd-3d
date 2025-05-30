@@ -30,7 +30,8 @@ The WolfpackUnity ML-Agents project examines how agents learn and adapt behavior
 ## Installation & Setup
 
 ### Prerequisites
-- Unity Editor version `6000.1.1f1`
+- [Unity Editor](https://unity.com/fr/releases/editor/whats-new/6000.1.1) version `6000.1.1f1`
+- [ML Agents Package](https://docs.unity3d.com/Packages/com.unity.ml-agents@3.0/manual/index.html) 3.0.0
 - Python installed with dependencies listed in `requirements.txt`
 
 ### Quick Start
